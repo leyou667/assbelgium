@@ -401,6 +401,19 @@
       });
     });
 
+    // mobile nav toggle (hamburger, shown once .navlinks collapses below 1080px)
+    const navToggle = document.getElementById("navToggle");
+    const mobileNav = document.getElementById("mobileNav");
+    navToggle.addEventListener("click", () => {
+      const open = !mobileNav.classList.contains("open");
+      mobileNav.classList.toggle("open", open);
+      navToggle.setAttribute("aria-expanded", String(open));
+    });
+    mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      mobileNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }));
+
     // chat
     document.getElementById("chatToggle").addEventListener("click", () => { state.chatOpen = !state.chatOpen; renderChat(); });
     document.querySelector("[data-close-chat]").addEventListener("click", () => { state.chatOpen = false; renderChat(); });
@@ -434,19 +447,32 @@
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("in"); }), { threshold: 0.08 });
     document.querySelectorAll("[data-reveal]").forEach(n => io.observe(n));
 
-    // parallax
+    // parallax — cache each node's document-relative center on load/resize so
+    // the scroll handler itself never forces a layout reflow (no
+    // getBoundingClientRect while scrolling, only cheap arithmetic).
     let raf = null;
-    function applyParallax() {
+    let parCache = [];
+    function cacheParallaxRects() {
       const y = window.scrollY || 0;
-      document.querySelectorAll("[data-par]").forEach(n => {
+      parCache = Array.prototype.map.call(document.querySelectorAll("[data-par]"), (n) => {
         const k = parseFloat(n.getAttribute("data-par")) || 0;
         const r = n.getBoundingClientRect();
-        const c = r.top + y + r.height / 2 - (y + window.innerHeight / 2);
-        n.style.transform = "translate3d(0," + (-c * k).toFixed(1) + "px,0)";
+        return { node: n, k, centerDoc: r.top + y + r.height / 2 };
       });
     }
+    function applyParallax() {
+      const y = window.scrollY || 0;
+      const mid = y + window.innerHeight / 2;
+      parCache.forEach(({ node, k, centerDoc }) => {
+        node.style.transform = "translate3d(0," + (-((centerDoc - mid) * k)).toFixed(1) + "px,0)";
+      });
+    }
+    let resizeT = null;
+    window.addEventListener("resize", () => { clearTimeout(resizeT); resizeT = setTimeout(() => { cacheParallaxRects(); applyParallax(); }, 150); });
     window.addEventListener("scroll", () => { if (raf) return; raf = requestAnimationFrame(() => { raf = null; applyParallax(); }); }, { passive: true });
+    cacheParallaxRects();
     applyParallax();
+    window.addEventListener("load", () => { cacheParallaxRects(); applyParallax(); });
 
     // 3D tilt on hover
     document.addEventListener("mousemove", (ev) => {

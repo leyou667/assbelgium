@@ -30,6 +30,29 @@
   const PORTS = ["Anvers", "Zeebruges", "Shanghai", "Ningbo", "Jebel Ali", "Casablanca", "Dakar", "Abidjan", "Lagos", "Douala", "New York", "Autre"];
   const CITIES = ["Bruxelles", "Anvers", "Liège", "Paris", "Rotterdam", "Cologne", "Milan", "Madrid", "Autre"];
 
+  // Full world port / city lists for the "Autre" full-screen search picker
+  // (the compact PORTS / CITIES lists above stay the quick-select chips).
+  const WORLD_PORTS = [
+    "Abidjan", "Alger", "Algésiras", "Anvers", "Auckland", "Balboa (Panama)", "Bandar Abbas", "Bangkok / Laem Chabang",
+    "Buenos Aires", "Busan", "Callao (Lima)", "Cartagena", "Casablanca", "Charleston", "Chennai", "Chittagong",
+    "Colombo", "Constanța", "Cotonou", "Dakar", "Dammam", "Djeddah", "Djibouti", "Douala", "Durban", "Felixstowe",
+    "Gdańsk", "Gdynia", "Gênes", "Gioia Tauro", "Guangzhou", "Haïfa", "Halifax", "Hambourg", "Ho Chi Minh Ville",
+    "Hong Kong", "Houston", "Jebel Ali (Dubaï)", "Karachi", "Kaohsiung", "Le Cap", "Le Havre", "Livourne", "Lomé",
+    "Long Beach", "Los Angeles", "Lagos", "Manzanillo", "Marseille", "Mombasa", "Montréal", "New York / New Jersey",
+    "Nhava Sheva (Mumbai)", "Ningbo", "Norfolk", "Oakland", "Pirée", "Port Klang", "Qingdao", "Rijeka", "Rio de Janeiro",
+    "Rotterdam", "Santos", "Savannah", "Shanghai", "Shenzhen", "Singapour", "Sines", "Southampton", "Sydney",
+    "Tanger Med", "Tanjung Pelepas", "Tianjin", "Trieste", "Tunis", "Valence", "Vancouver", "Veracruz", "Xiamen",
+    "Zeebruges"
+  ].sort((a, b) => a.localeCompare(b, "fr"));
+
+  const WORLD_CITIES = [
+    "Amsterdam", "Anvers", "Athènes", "Bâle", "Barcelone", "Berlin", "Bilbao", "Birmingham", "Bruxelles", "Bucarest",
+    "Budapest", "Charleroi", "Cologne", "Copenhague", "Dublin", "Düsseldorf", "Eindhoven", "Francfort", "Gand",
+    "Genève", "Helsinki", "La Haye", "Liège", "Lille", "Lisbonne", "Londres", "Luxembourg", "Lyon", "Madrid",
+    "Manchester", "Marseille", "Milan", "Munich", "Naples", "Oslo", "Paris", "Porto", "Prague", "Rome", "Rotterdam",
+    "Sofia", "Stockholm", "Strasbourg", "Turin", "Utrecht", "Valence", "Varsovie", "Vienne", "Zurich"
+  ].sort((a, b) => a.localeCompare(b, "fr"));
+
   const DEMOS = [
     { ref: "LL-2026-1847", from: "Shanghai", to: "Anvers", mode: "Maritime FCL", vessel: "MSC Loreto", container: "MSCU 738210-4", stage: 3, eta: "28 juin 2026" },
     { ref: "LL-2026-1923", from: "Casablanca", to: "Bruxelles", mode: "RORO", vessel: "Grande Lagos", container: "—", stage: 5, eta: "22 juin 2026" },
@@ -93,6 +116,9 @@
     wizSent: false,
     wizRef: "",
     formError: "",
+    portPickerOpen: false,
+    portPickerField: null,
+    portPickerQuery: "",
     w: { dir: null, mode: null, from: null, to: null, goods: null, ctype: null, qty: 1, name: "", company: "", email: "", phone: "", msg: "" }
   };
 
@@ -158,6 +184,8 @@
         '</div>'
       ));
     });
+    const dot = document.querySelector(".progress-line .dot");
+    if (dot) dot.style.left = (state.routeStep / ROUTE_STEPS.length * 100) + "%";
   }
 
   // ---- render: chat widget ----
@@ -239,6 +267,44 @@
     renderTracker();
   }
 
+  // ---- render: port / city picker (full-screen "Autre" search) ----
+  function openPortPicker(field) {
+    state.portPickerField = field;
+    state.portPickerQuery = "";
+    state.portPickerOpen = true;
+    renderPortPicker();
+  }
+
+  function closePortPicker() {
+    state.portPickerOpen = false;
+    renderPortPicker();
+  }
+
+  function renderPortPicker() {
+    document.getElementById("portPickerOverlay").classList.toggle("open", state.portPickerOpen);
+    if (!state.portPickerOpen) return;
+    const road = state.w.mode === "Routier";
+    document.getElementById("portPickerTitle").textContent = road ? "Choisir une ville" : "Choisir un port";
+    document.getElementById("portPickerSearch").value = state.portPickerQuery;
+    const source = road ? WORLD_CITIES : WORLD_PORTS;
+    const q = state.portPickerQuery.trim().toLowerCase();
+    const filtered = q ? source.filter(p => p.toLowerCase().includes(q)) : source;
+    const field = state.portPickerField;
+    const list = document.getElementById("portPickerList");
+    list.innerHTML = "";
+    filtered.forEach(p => {
+      const sel = state.w[field] === p;
+      const chip = el('<button type="button" class="chip' + (sel ? " sel" : "") + '">' + p + '</button>');
+      chip.addEventListener("click", () => {
+        setW({ [field]: p });
+        closePortPicker();
+        renderWizard();
+      });
+      list.appendChild(chip);
+    });
+    if (!filtered.length) list.appendChild(el('<div class="notice">Aucun résultat.</div>'));
+  }
+
   // ---- render: wizard ----
   function renderWizard() {
     const overlay = document.getElementById("wizardOverlay");
@@ -308,8 +374,18 @@
       const opts = road ? CITIES : PORTS;
       const mkOpts = (field, host) => {
         host.innerHTML = "";
+        const current = w[field];
+        const isCustom = !!current && opts.indexOf(current) < 0;
         opts.forEach(p => {
-          const sel = w[field] === p;
+          if (p === "Autre") {
+            const label = isCustom ? current : "Autre";
+            const sel = isCustom;
+            const chip = el('<button type="button" class="chip' + (sel ? " sel" : "") + '">' + label + '</button>');
+            chip.addEventListener("click", () => openPortPicker(field));
+            host.appendChild(chip);
+            return;
+          }
+          const sel = current === p;
           const chip = el('<button type="button" class="chip' + (sel ? " sel" : "") + '">' + p + '</button>');
           chip.addEventListener("click", () => { setW({ [field]: p }); renderWizard(); });
           host.appendChild(chip);
@@ -424,6 +500,11 @@
     document.getElementById("trackerOverlay").addEventListener("click", (e) => { if (e.target.id === "trackerOverlay") { state.trackOpen = false; renderTracker(); } });
     document.getElementById("refInput").addEventListener("input", (e) => { state.refInput = e.target.value; });
     document.getElementById("doTrackBtn").addEventListener("click", doTrack);
+
+    // port / city picker
+    document.querySelectorAll("[data-close-portpicker]").forEach(b => b.addEventListener("click", closePortPicker));
+    document.getElementById("portPickerOverlay").addEventListener("click", (e) => { if (e.target.id === "portPickerOverlay") closePortPicker(); });
+    document.getElementById("portPickerSearch").addEventListener("input", (e) => { state.portPickerQuery = e.target.value; renderPortPicker(); });
 
     // wizard
     document.querySelectorAll("[data-open-wizard]").forEach(b => b.addEventListener("click", () => openWizard(b.dataset.dir || null)));

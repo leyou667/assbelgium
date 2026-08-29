@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "title": "Louhichi Logistics — Expediteur in België",
+    "description": "Zeevrachtboeking, douane, transport en documentair advies. Louhichi Logistics regelt uw Export en Import van A tot Z."
+  },
+  "nav": {
+    "brandHomeLabel": "Louhichi Logistics — start",
+    "services": "Diensten",
+    "process": "Hoe het werkt",
+    "why": "Waarom wij",
+    "contact": "Contact",
+    "track": "Opvolgen",
+    "quote": "Offerte aanvragen",
+    "menuLabel": "Menu openen"
+  },
+  "hero": {
+    "eyebrow": "Expediteur in België",
+    "title": "Uw goederen, <span class=\"accent\">overal ter wereld</span>.",
+    "lede": "Zeevrachtboeking, douane, transport en documentair advies. Louhichi Logistics regelt uw Export en Import van A tot Z — eenvoudig.",
+    "exportLabel": "EXPORT",
+    "exportDesc": "Ik verstuur goederen naar het buitenland",
+    "importLabel": "IMPORT",
+    "importDesc": "Ik ontvang goederen uit het buitenland",
+    "captionTitle": "Opvolging van A tot Z",
+    "captionDesc": "Eén vast aanspreekpunt",
+    "stat1Label": "Begeleiding",
+    "stat1Value": "van A tot Z",
+    "stat2Label": "Havens",
+    "stat2Value": "wereldwijd",
+    "stat3Label": "Antwoord",
+    "stat3Value": "binnen 24 u",
+    "shipAlt": "Containerschip nadert de haven"
+  },
+  "tracking": {
+    "title": "Realtime opvolging",
+    "subtitle": "Uw goederen staan onder controle, in elke fase.",
+    "cta": "Mijn zending opvolgen",
+    "steps": {
+      "pickup": { "label": "Opgehaald", "note": "Stuwen & ophaling" },
+      "sea": { "label": "Op zee", "note": "Continu gevolgde positie" },
+      "customs": { "label": "Douane", "note": "Inklaring & documenten" },
+      "delivered": { "label": "Geleverd", "note": "Deur-tot-deur" }
+    }
+  },
+  "services": {
+    "eyebrow": "Onze diensten",
+    "title": "Alles om zorgeloos te verzenden",
+    "subtitle": "Eén team, één verantwoordelijkheid: de uwe, van u overgenomen.",
+    "card1": { "title": "Zeevrachtboeking", "desc": "Boeking van FCL-/LCL-containervracht tegen de beste tarieven, op de belangrijkste wereldlijnen.", "tag": "FCL · LCL · RORO" },
+    "card2": { "title": "Douane & formaliteiten", "desc": "Inklaring export/import, aangiften, GS-codes, documenten en wettelijke conformiteit.", "tag": "T1 / NCTS · EUR.1 · PLDA" },
+    "card3": { "title": "Wegtransport", "desc": "Voor- en natransport, deur-tot-deurlevering in heel België en Europa.", "tag": "België · Europa" },
+    "card4": { "title": "Documentair advies", "desc": "Bijstand bij verzendingsdocumenten, incoterms, certificaten en transportverzekering.", "tag": "Incoterms · Verzekering" },
+    "card5": { "title": "Reisticketing", "desc": "Vliegtuig- en langeafstandsbustickets (FlixBus & andere) tegen onderhandelde tarieven, voor u en uw teams.", "tag": "Vliegtuig · Bus" },
+    "card6": { "title": "DHL-verzendpunt", "desc": "Breng uw pakketten binnen bij Louhichi Logistics: wij maken het DHL-label aan en verzenden tegen onderhandeld tarief.", "tag": "Pakketten · Express" }
+  },
+  "containers": {
+    "title": "Containers, op schaal",
+    "subtitle": "Kies in één oogopslag het volume dat u nodig heeft.",
+    "row1": { "name": "20' Standaard", "sub": "6,06 m" },
+    "row2": { "name": "40' Standaard", "sub": "12,19 m" },
+    "row3": { "name": "40' High Cube", "sub": "12,19 m · +30 cm" },
+    "row4": { "name": "Vriescontainer", "sub": "Reefer / koel" },
+    "row5": { "name": "Open Top", "sub": "Belading via de bovenkant" },
+    "yardAlt": "Containerpark"
+  },
+  "trust": {
+    "eyebrow": "Vertrouwen & erkenningen",
+    "title": "Engagementen, geen loze beloftes",
+    "lede": "Wij werken onder officiële erkenningen die onze verantwoordelijkheid inhouden.",
+    "proof1Label": "ingeklaarde dossiers",
+    "proof2Label": "vrijgaves binnen de termijn",
+    "proof3Label": "antwoord op uw offerte",
+    "proof4Label": "in dienst van importeurs",
+    "certsTitle": "Officiële, controleerbare erkenningen",
+    "cert1": { "name": "AEO", "desc": "Geautoriseerde Marktdeelnemer — douane & veiligheid." },
+    "cert2": { "name": "DHL-partner", "desc": "Erkend verzendpunt, onderhandelde tarieven." },
+    "cert3": { "name": "FIATA / IATA", "desc": "Internationaal netwerk van expediteurs." },
+    "cert4": { "name": "Antwerpen & Zeebrugge", "desc": "Actief in de grote Belgische havens." },
+    "slaTitle": "Waar u op kunt rekenen",
+    "sla1": { "badge": "< 1 u", "title": "Antwoord op uw offerte", "desc": "Een duidelijk, allesomvattend voorstel binnen het uur, tijdens kantooruren." },
+    "sla2": { "badge": "1 vast", "title": "Eén vaste contactpersoon", "desc": "Eén aanspreekpunt dat uw dossiers kent — geen callcenter." },
+    "sla3": { "badge": "0 verrassingen", "title": "Vaste offerte, alles inbegrepen", "desc": "Rechten, btw en kosten vooraf gedetailleerd — geen verborgen kosten." }
+  },
+  "lanes": {
+    "eyebrow": "Lijnen & havens",
+    "title": "Van de grote Belgische havens naar de wereld",
+    "lede": "Wij opereren vanuit Antwerpen en Zeebrugge op de belangrijkste wereldlijnen, in FCL, LCL, RORO en luchtvracht.",
+    "networkAlt": "Multimodaal logistiek netwerk"
+  },
+  "process": {
+    "eyebrow": "Hoe het werkt",
+    "title": "Vier stappen, geen kopzorgen",
+    "subtitle": "U klikt, wij regelen de rest.",
+    "step1": { "title": "U kiest", "desc": "Export of Import, dan de transportmodus — allemaal met de muis." },
+    "step2": { "title": "U beschrijft", "desc": "Havens, goederen, containers: enkele klikken volstaan." },
+    "step3": { "title": "Wij bellen u terug", "desc": "Ons team stuurt u een duidelijke offerte binnen 24 u." },
+    "step4": { "title": "Wij verzenden", "desc": "Boeking, douane en transport beheerd door één aanspreekpunt." },
+    "truckAlt": "Vrachtwagen tijdens het laden"
+  },
+  "why": {
+    "eyebrow": "Waarom Louhichi Logistics",
+    "title": "Eenvoudig voor u, waterdicht voor uw goederen",
+    "card1": { "title": "Eén vast aanspreekpunt", "desc": "Van offerte tot levering volgt hetzelfde team uw dossier." },
+    "card2": { "title": "Zonder jargon", "desc": "Wij leggen elke stap uit in duidelijke taal." },
+    "card3": { "title": "Drietalig", "desc": "Wij werken in het Frans, Nederlands en Engels." },
+    "card4": { "title": "Volledige transparantie", "desc": "Duidelijke tarieven, zonder verborgen kosten, met opvolging in elke fase." }
+  },
+  "testimonials": {
+    "title": "Wat onze klanten zeggen",
+    "t1": { "quote": "« Wij importeren al 3 jaar uit China, en vóór Louhichi Logistics wisselden we voortdurend van contactpersoon. Nu heb ik één vast contact die mijn dossiers door en door kent. Een offerte binnen het uur, dat is concreet, geen marketingpraatje. »", "role": "Directeur Inkoop, Norda Import SPRL" },
+    "t2": { "quote": "« Eerste FCL-zending met hen en geen enkele onaangename verrassing op de eindfactuur — alles stond al in de offerte. De douane verliep vlot, zonder dat ik achter documenten moest aanlopen. »", "role": "Zaakvoerder, Belaïd Textiles" },
+    "t3": { "quote": "« De online opvolging is handig, je weet altijd waar de container zich bevindt. Een minpuntje voor de reactietijd op een vrijdagnamiddag, maar voor de rest zeer tevreden over de dienstverlening. »", "role": "Logistiek Verantwoordelijke, Ferro Export SA" },
+    "t4": { "quote": "« Kleine onderneming, eerste container verzonden naar Casablanca, ik was bang de weg kwijt te raken in de formaliteiten. Het team legde me elke stap eenvoudig uit. Ik raad het zonder aarzelen aan. »", "role": "Oprichter, Atlas Trading" }
+  },
+  "contact": {
+    "eyebrow": "Laten we praten",
+    "title": "Een vraag&nbsp;? Een project&nbsp;?",
+    "lede": "Bel of schrijf ons — snel antwoord en gratis advies.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefoon",
+    "addressLabel": "Adres",
+    "quotePanelTitle": "Ontvang uw gratis offerte",
+    "quotePanelDesc": "Beschrijf uw zending in enkele klikken. Geen ingewikkelde invoer — onze assistent begeleidt u stap voor stap.",
+    "quotePanelCta": "Start mijn aanvraag",
+    "quoteStat1Value": "6 stappen",
+    "quoteStat1Label": "alles met een klik",
+    "quoteStat2Value": "< 1 u",
+    "quoteStat2Label": "antwoord tijdens kantooruren"
+  },
+  "footer": {
+    "tagline": "Expediteur · Logistiek · Douane",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "chat": {
+    "toggleOpenLabel": "Assistent Louhichi",
+    "toggleCloseLabel": "Assistent sluiten",
+    "demo": "Demo",
+    "greeting": "Hallo! Ik ben de assistent van Louhichi. Kies hieronder een vraag.",
+    "faq": [
+      { "q": "Wat zijn jullie diensten?", "a": "Zeecontainer (FCL/LCL), RORO, luchtvracht, wegtransport, douanedienst (T1/NCTS, EUR.1, ATR, PLDA), logistiek & opslag, pakketten & express. Reisticketing: vliegtuig- en langeafstandsbustickets. Erkend DHL-verzendpunt." },
+      { "q": "Wat kost een 40' naar Antwerpen?", "a": "Dat hangt af van de vertrekhaven, de goederen en het incoterm. Een adviseur van Louhichi bevestigt het definitieve tarief binnen 1 werkuur, exclusief douanerechten & btw." },
+      { "q": "Welke documenten voor een export?", "a": "Handelsfactuur, paklijst, GS-code, en afhankelijk van de bestemming: EUR.1, ATR, oorsprongscertificaat. Wij begeleiden u bij de incoterms en de transportverzekering." },
+      { "q": "Waar zijn jullie bereikbaar?", "a": "devis@louhichilogistics.be · +32 472 92 51 06 · [AAN TE VULLEN]. BTW BE [AAN TE VULLEN]." },
+      { "q": "Hoe lang duurt een offerte?", "a": "Gratis offerte, vrijblijvend, antwoord binnen minder dan 1 werkuur. Alle incoterms: EXW, FOB, CIF, CFR, DAP, DDP, FCA." },
+      { "q": "Regelen jullie de douane?", "a": "Ja. Inklaring export/import, aangiften, GS-codes, documenten en wettelijke conformiteit. Wij werken onder AEO-erkenning." }
+    ]
+  },
+  "tracker": {
+    "title": "Opvolging van uw zending",
+    "intro": "Kies een demozending of voer uw dossierreferentie in.",
+    "refLabel": "… of uw dossierreferentie",
+    "refPlaceholder": "Bv.: LL-2026-1847",
+    "trackBtn": "Opvolgen",
+    "notFound": "Onbekende referentie — hier een voorbeeld van live opvolging.",
+    "metaMode": "Modus",
+    "metaVessel": "Schip / vlucht",
+    "metaContainer": "Container",
+    "metaEta": "Verwachte aankomst",
+    "progressLabel": "Voortgang",
+    "footerText": "Alles is onder controle. Uw adviseur bij Louhichi volgt elke stap van het transport op.",
+    "footerCta": "Spreek met mijn adviseur",
+    "stages": [
+      { "label": "Boeking bevestigd", "desc": "Reservering bevestigd bij de rederij." },
+      { "label": "Opgehaald", "desc": "Goederen gestuwd en opgehaald." },
+      { "label": "Geladen", "desc": "Aan boord geladen — vertrek op til." },
+      { "label": "Onderweg", "desc": "Onderweg — positie continu gevolgd." },
+      { "label": "Aangekomen in haven", "desc": "Aangekomen op bestemming, lossing bezig." },
+      { "label": "Ingeklaard", "desc": "Douaneformaliteiten afgerond." },
+      { "label": "In levering", "desc": "Onderweg naar het afleveradres." },
+      { "label": "Geleverd", "desc": "Goederen geleverd. Bedankt voor uw vertrouwen." }
+    ],
+    "demos": [
+      { "mode": "Zeevracht FCL", "eta": "28 juni 2026" },
+      { "mode": "RORO", "eta": "22 juni 2026" },
+      { "mode": "Luchtvracht", "eta": "Geleverd op 19 juni" }
+    ]
+  },
+  "portPicker": {
+    "titlePort": "Kies een haven",
+    "titleCity": "Kies een stad",
+    "intro": "Zoek, en selecteer vervolgens uit de lijst.",
+    "searchPlaceholder": "Zoeken…",
+    "noResults": "Geen resultaten.",
+    "otherLabel": "Andere"
+  },
+  "common": {
+    "close": "Sluiten"
+  },
+  "wizard": {
+    "backToSite": "Terug naar de site",
+    "stepLabels": ["Richting", "Transport", "Traject", "Goederen", "Containers", "Gegevens"],
+    "stepDefs": [
+      { "eyebrow": "Stap 1", "q": "Wat wilt u doen?", "help": "Kies de richting van uw zending." },
+      { "eyebrow": "Stap 2", "q": "Welke transportmodus?", "help": "Selecteer het voornaamste transportmiddel." },
+      { "eyebrow": "Stap 3", "q": "Wat is het traject?", "helpPort": "Kies de haven van vertrek en van aankomst.", "helpRoad": "Kies de stad van vertrek en van aankomst." },
+      { "eyebrow": "Stap 4", "q": "Wat vervoert u?", "help": "Kies de dichtstbijzijnde categorie." },
+      { "eyebrow": "Stap 5", "q": "Welk type container?", "help": "Kies de container die bij uw goederen past." },
+      { "eyebrow": "Laatste stap", "q": "Uw gegevens", "help": "Om u uw offerte te sturen. Dit is het enige onderdeel dat u zelf typt." },
+      { "eyebrow": "Overzicht", "q": "Laten we samen nakijken", "help": "Klopt alles? U kunt elke regel nog aanpassen." }
+    ],
+    "route": {
+      "fromPort": "Haven van vertrek",
+      "toPort": "Haven van aankomst",
+      "fromRoad": "Stad / land van vertrek",
+      "toRoad": "Stad / land van aankomst"
+    },
+    "qtyQuestion": "Hoeveel containers?",
+    "qtyUnitSingular": "container",
+    "qtyUnitPlural": "containers",
+    "form": {
+      "nameLabel": "Volledige naam *",
+      "companyLabel": "Bedrijf (optioneel)",
+      "emailLabel": "E-mail *",
+      "phoneLabel": "Telefoon *",
+      "phonePlaceholder": "+32 …",
+      "msgLabel": "Bericht (optioneel)",
+      "msgPlaceholder": "Nog iets te preciseren over uw zending?"
+    },
+    "recap": {
+      "sens": "Richting",
+      "transport": "Transport",
+      "trajet": "Traject",
+      "marchandise": "Goederen",
+      "conteneur": "Container",
+      "contact": "Contact",
+      "edit": "Wijzigen"
+    },
+    "back": "Vorige",
+    "next": "Volgende",
+    "submit": "Mijn aanvraag versturen",
+    "errors": {
+      "name": "Gelieve uw naam in te vullen.",
+      "email": "Ongeldig e-mailadres.",
+      "phone": "Gelieve een telefoonnummer in te vullen."
+    },
+    "sent": {
+      "title": "Aanvraag verzonden!",
+      "desc": "Bedankt. Ons team neemt binnen 24 u contact met u op met uw offerte. Uw referentie:",
+      "backHome": "Terug naar de startpagina",
+      "newRequest": "Nieuwe aanvraag"
+    },
+    "choices": {
+      "dir": {
+        "export": { "label": "EXPORTEREN", "sub": "Ik verstuur naar het buitenland" },
+        "import": { "label": "IMPORTEREN", "sub": "Ik ontvang uit het buitenland" }
+      },
+      "mode": {
+        "maritime": { "label": "Zeevracht", "sub": "Container per schip" },
+        "road": { "label": "Weg", "sub": "Vrachtwagen in Europa" },
+        "air": { "label": "Luchtvracht", "sub": "Vracht per vliegtuig" }
+      },
+      "goods": {
+        "vehicles": { "label": "Voertuigen", "sub": "Auto's, machines" },
+        "general": { "label": "Algemene goederen", "sub": "Pallets, dozen" },
+        "food": { "label": "Voeding", "sub": "Levensmiddelen, dranken" },
+        "hazard": { "label": "Gevaarlijke goederen", "sub": "ADR / IMO" },
+        "personal": { "label": "Persoonlijke bezittingen", "sub": "Verhuis" },
+        "other": { "label": "Andere", "sub": "Ik verduidelijk" }
+      },
+      "ctype": {
+        "std20": { "label": "20' Standaard", "sub": "≈ 28 m³" },
+        "std40": { "label": "40' Standaard", "sub": "≈ 58 m³" },
+        "hc40": { "label": "40' High Cube", "sub": "Meer volume" },
+        "reefer": { "label": "Vriescontainer", "sub": "Reefer / koel" },
+        "opentop": { "label": "Open Top", "sub": "Belading via de bovenkant" },
+        "unsure": { "label": "Ik weet het niet", "sub": "Wij adviseren u" }
+      }
+    }
+  }
+}

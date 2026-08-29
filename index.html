@@ -6,6 +6,7 @@
 <title>Louhichi Logistics — Transitaire en Belgique</title>
 <meta name="description" content="Booking maritime, douane, transport et conseil documentaire. Louhichi Logistics gère votre Export et votre Import de bout en bout.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<script src="i18n.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
 
   <header class="site-header">
     <div class="wrap bar">
-      <a href="#top" class="brand" aria-label="Louhichi Logistics — accueil">
+      <a href="#top" class="brand" aria-label="Louhichi Logistics — accueil" data-i18n-attr-aria-label="nav.brandHomeLabel">
         <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
           <circle cx="32" cy="32" r="27" fill="none" stroke="#1d2d3d" stroke-width="2.5"/>
           <ellipse cx="32" cy="32" rx="11" ry="27" fill="none" stroke="#1d2d3d" stroke-width="1.6"/>
@@ -32,26 +33,26 @@
         <span class="brand-text"><span class="b1">LOUHICHI</span><span class="b2 gold">LOGISTICS</span></span>
       </a>
       <nav class="navlinks">
-        <a href="#services">Services</a>
-        <a href="#process">Comment ça marche</a>
-        <a href="#why">Pourquoi nous</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Comment ça marche</a>
+        <a href="#why" data-i18n="nav.why">Pourquoi nous</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="langs">
         <button type="button" class="active" data-lang="fr">FR</button>
         <button type="button" data-lang="nl">NL</button>
         <button type="button" data-lang="en">EN</button>
       </div>
-      <button type="button" class="btn-outline" data-open-tracker>Suivi</button>
-      <button type="button" class="btn-solid" data-open-wizard>Demander un devis</button>
-      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+      <button type="button" class="btn-outline" data-open-tracker data-i18n="nav.track">Suivi</button>
+      <button type="button" class="btn-solid" data-open-wizard data-i18n="nav.quote">Demander un devis</button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu" data-i18n-attr-aria-label="nav.menuLabel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5h17"/><path d="M3.5 12h17"/><path d="M3.5 17.5h17"/></svg>
       </button>
       <nav class="mobile-nav" id="mobileNav">
-        <a href="#services">Services</a>
-        <a href="#process">Comment ça marche</a>
-        <a href="#why">Pourquoi nous</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Comment ça marche</a>
+        <a href="#why" data-i18n="nav.why">Pourquoi nous</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -59,46 +60,46 @@
   <section id="top" class="wrap hero">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow"><span class="rule"></span><span class="label">Transitaire en Belgique</span></div>
-        <h1>Votre marchandise, <span class="accent">partout dans le monde</span>.</h1>
-        <p class="lede">Booking maritime, douane, transport et conseil documentaire. Louhichi Logistics gère votre Export et votre Import de bout en bout — simplement.</p>
+        <div class="eyebrow"><span class="rule"></span><span class="label" data-i18n="hero.eyebrow">Transitaire en Belgique</span></div>
+        <h1 data-i18n="hero.title">Votre marchandise, <span class="accent">partout dans le monde</span>.</h1>
+        <p class="lede" data-i18n="hero.lede">Booking maritime, douane, transport et conseil documentaire. Louhichi Logistics gère votre Export et votre Import de bout en bout — simplement.</p>
         <div class="hero-choices">
-          <button type="button" class="hero-choice export blueprint" data-tilt data-open-wizard data-dir="EXPORTER">
+          <button type="button" class="hero-choice export blueprint" data-tilt data-open-wizard data-dir="export">
             <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-            <span class="k">EXPORT</span>
-            <span class="s">J'envoie de la marchandise vers l'étranger</span>
+            <span class="k" data-i18n="hero.exportLabel">EXPORT</span>
+            <span class="s" data-i18n="hero.exportDesc">J'envoie de la marchandise vers l'étranger</span>
           </button>
-          <button type="button" class="hero-choice import blueprint" data-tilt data-open-wizard data-dir="IMPORTER">
+          <button type="button" class="hero-choice import blueprint" data-tilt data-open-wizard data-dir="import">
             <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-            <span class="k">IMPORT</span>
-            <span class="s">Je reçois de la marchandise de l'étranger</span>
+            <span class="k" data-i18n="hero.importLabel">IMPORT</span>
+            <span class="s" data-i18n="hero.importDesc">Je reçois de la marchandise de l'étranger</span>
           </button>
         </div>
       </div>
       <div class="hero-figure-wrap">
         <div class="hero-figure" data-par="0.08">
           <div class="figure blueprint">
-            <img src="assets/ship-sunset.jpeg" alt="Porte-conteneurs en approche du port">
+            <img src="assets/ship-sunset.jpeg" alt="Porte-conteneurs en approche du port" data-i18n-attr-alt="hero.shipAlt">
             <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
           </div>
           <div class="hero-caption" data-par="-0.05">
-            <div class="t">Suivi de A à Z</div>
-            <div class="d">Un seul interlocuteur</div>
+            <div class="t" data-i18n="hero.captionTitle">Suivi de A à Z</div>
+            <div class="d" data-i18n="hero.captionDesc">Un seul interlocuteur</div>
           </div>
         </div>
       </div>
     </div>
     <div class="stats-row">
-      <div><div class="k">Accompagnement</div><div class="v">de A à Z</div></div>
-      <div><div class="k">Ports</div><div class="v">dans le monde</div></div>
-      <div><div class="k">Réponse</div><div class="v">sous 24 h</div></div>
+      <div><div class="k" data-i18n="hero.stat1Label">Accompagnement</div><div class="v" data-i18n="hero.stat1Value">de A à Z</div></div>
+      <div><div class="k" data-i18n="hero.stat2Label">Ports</div><div class="v" data-i18n="hero.stat2Value">dans le monde</div></div>
+      <div><div class="k" data-i18n="hero.stat3Label">Réponse</div><div class="v" data-i18n="hero.stat3Value">sous 24 h</div></div>
     </div>
   </section>
 
   <section class="wrap block" data-reveal>
     <div class="section-head">
-      <h2>Suivi en temps réel</h2>
-      <p>Votre marchandise est sous contrôle, à chaque étape.</p>
+      <h2 data-i18n="tracking.title">Suivi en temps réel</h2>
+      <p data-i18n="tracking.subtitle">Votre marchandise est sous contrôle, à chaque étape.</p>
     </div>
     <div class="progress-line">
       <div class="fill"></div>
@@ -108,101 +109,101 @@
       <!-- filled by script.js -->
     </div>
     <div style="margin-top: 44px;">
-      <button type="button" class="btn-outline" data-open-tracker>Suivre mon envoi</button>
+      <button type="button" class="btn-outline" data-open-tracker data-i18n="tracking.cta">Suivre mon envoi</button>
     </div>
   </section>
 
   <section id="services" class="wrap block" data-reveal>
-    <div class="eyebrow"><span class="rule"></span><span class="label">Nos services</span></div>
-    <h2 class="title">Tout ce qu'il faut pour expédier sereinement</h2>
-    <p class="subtitle">Une équipe, une responsabilité : la vôtre, déchargée.</p>
+    <div class="eyebrow"><span class="rule"></span><span class="label" data-i18n="services.eyebrow">Nos services</span></div>
+    <h2 class="title" data-i18n="services.title">Tout ce qu'il faut pour expédier sereinement</h2>
+    <p class="subtitle" data-i18n="services.subtitle">Une équipe, une responsabilité : la vôtre, déchargée.</p>
     <div class="services-grid">
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 16.5h17l-2 4.5H5.5z"/><path d="M6.5 16.5V9.5h11v7"/><path d="M12 4.5v5"/><path d="M9.5 12.5h5"/></svg></div>
-        <h3>Booking maritime</h3>
-        <p>Réservation de fret conteneurs FCL / LCL au meilleur tarif, sur les principales lignes mondiales.</p>
-        <span class="tag">FCL · LCL · RORO</span>
+        <h3 data-i18n="services.card1.title">Booking maritime</h3>
+        <p data-i18n="services.card1.desc">Réservation de fret conteneurs FCL / LCL au meilleur tarif, sur les principales lignes mondiales.</p>
+        <span class="tag" data-i18n="services.card1.tag">FCL · LCL · RORO</span>
       </div>
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 7.6-7.5 10-4.3-2.4-7.5-5.5-7.5-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></div>
-        <h3>Douane &amp; formalités</h3>
-        <p>Dédouanement export/import, déclarations, codes HS, documents et conformité réglementaire.</p>
-        <span class="tag">T1 / NCTS · EUR.1 · PLDA</span>
+        <h3 data-i18n="services.card2.title">Douane &amp; formalités</h3>
+        <p data-i18n="services.card2.desc">Dédouanement export/import, déclarations, codes HS, documents et conformité réglementaire.</p>
+        <span class="tag" data-i18n="services.card2.tag">T1 / NCTS · EUR.1 · PLDA</span>
       </div>
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 10h3.6l3.4 3.4v2.1h-7z"/><path d="M7 19a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8"/><path d="M17 19a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8"/></svg></div>
-        <h3>Transport routier</h3>
-        <p>Pré- et post-acheminement, livraison porte-à-porte partout en Belgique et en Europe.</p>
-        <span class="tag">Belgique · Europe</span>
+        <h3 data-i18n="services.card3.title">Transport routier</h3>
+        <p data-i18n="services.card3.desc">Pré- et post-acheminement, livraison porte-à-porte partout en Belgique et en Europe.</p>
+        <span class="tag" data-i18n="services.card3.tag">Belgique · Europe</span>
       </div>
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6"/><path d="M9 16h5"/></svg></div>
-        <h3>Conseil documentaire</h3>
-        <p>Assistance sur les documents d'expédition, incoterms, certificats et assurance transport.</p>
-        <span class="tag">Incoterms · Assurance</span>
+        <h3 data-i18n="services.card4.title">Conseil documentaire</h3>
+        <p data-i18n="services.card4.desc">Assistance sur les documents d'expédition, incoterms, certificats et assurance transport.</p>
+        <span class="tag" data-i18n="services.card4.tag">Incoterms · Assurance</span>
       </div>
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12.5L21.5 4.5l-7.5 16-3.2-7.3z"/><path d="M10.8 13.2L7 9.6"/></svg></div>
-        <h3>Billetterie voyageurs</h3>
-        <p>Billets d'avion et de bus longue distance (FlixBus &amp; autres) à tarifs négociés, pour vous et vos équipes.</p>
-        <span class="tag">Avion · Bus</span>
+        <h3 data-i18n="services.card5.title">Billetterie voyageurs</h3>
+        <p data-i18n="services.card5.desc">Billets d'avion et de bus longue distance (FlixBus &amp; autres) à tarifs négociés, pour vous et vos équipes.</p>
+        <span class="tag" data-i18n="services.card5.tag">Avion · Bus</span>
       </div>
 
       <div class="service-card blueprint" data-tilt>
         <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></div>
-        <h3>Point d'envoi DHL</h3>
-        <p>Déposez vos colis chez Louhichi Logistics : nous créons l'étiquette DHL et expédions, à tarif négocié.</p>
-        <span class="tag">Colis · Express</span>
+        <h3 data-i18n="services.card6.title">Point d'envoi DHL</h3>
+        <p data-i18n="services.card6.desc">Déposez vos colis chez Louhichi Logistics : nous créons l'étiquette DHL et expédions, à tarif négocié.</p>
+        <span class="tag" data-i18n="services.card6.tag">Colis · Express</span>
       </div>
 
     </div>
   </section>
 
   <section class="wrap block" data-reveal>
-    <h2 style="font-size: clamp(30px, 3.4vw, 44px); margin: 0 0 10px;">Conteneurs, à l'échelle</h2>
-    <p class="subtitle" style="margin-bottom: 52px;">Choisissez d'un coup d'œil le volume qu'il vous faut.</p>
+    <h2 style="font-size: clamp(30px, 3.4vw, 44px); margin: 0 0 10px;" data-i18n="containers.title">Conteneurs, à l'échelle</h2>
+    <p class="subtitle" style="margin-bottom: 52px;" data-i18n="containers.subtitle">Choisissez d'un coup d'œil le volume qu'il vous faut.</p>
     <div class="containers-grid">
       <div class="containers-list">
         <div class="container-row">
-          <div><div class="name">20' Standard</div><div class="sub">6,06 m</div></div>
+          <div><div class="name" data-i18n="containers.row1.name">20' Standard</div><div class="sub" data-i18n="containers.row1.sub">6,06 m</div></div>
           <div class="bar-track"><div class="grid-bg"></div><div class="bar" style="width: 34%; height: 34px;"></div></div>
           <div class="vol">≈ 28 m³</div>
         </div>
         <div class="container-row">
-          <div><div class="name">40' Standard</div><div class="sub">12,19 m</div></div>
+          <div><div class="name" data-i18n="containers.row2.name">40' Standard</div><div class="sub" data-i18n="containers.row2.sub">12,19 m</div></div>
           <div class="bar-track"><div class="grid-bg"></div><div class="bar" style="width: 68%; height: 34px;"></div></div>
           <div class="vol">≈ 58 m³</div>
         </div>
         <div class="container-row">
-          <div><div class="name">40' High Cube</div><div class="sub">12,19 m · +30 cm</div></div>
+          <div><div class="name" data-i18n="containers.row3.name">40' High Cube</div><div class="sub" data-i18n="containers.row3.sub">12,19 m · +30 cm</div></div>
           <div class="bar-track"><div class="grid-bg"></div><div class="bar" style="width: 68%; height: 42px;"></div></div>
           <div class="vol">≈ 68 m³</div>
         </div>
         <div class="container-row">
-          <div><div class="name">Frigorifique</div><div class="sub">Reefer / froid</div></div>
+          <div><div class="name" data-i18n="containers.row4.name">Frigorifique</div><div class="sub" data-i18n="containers.row4.sub">Reefer / froid</div></div>
           <div class="bar-track"><div class="grid-bg"></div><div class="bar" style="width: 68%; height: 34px;"></div></div>
           <div class="vol">≈ 54 m³</div>
         </div>
         <div class="container-row">
-          <div><div class="name">Open Top</div><div class="sub">Charge par le haut</div></div>
+          <div><div class="name" data-i18n="containers.row5.name">Open Top</div><div class="sub" data-i18n="containers.row5.sub">Charge par le haut</div></div>
           <div class="bar-track"><div class="grid-bg"></div><div class="bar" style="width: 68%; height: 28px;"></div></div>
           <div class="vol">≈ 56 m³</div>
         </div>
       </div>
       <div class="containers-figure" data-par="0.05">
         <div class="figure blueprint">
-          <img src="assets/yard.jpeg" alt="Parc à conteneurs">
+          <img src="assets/yard.jpeg" alt="Parc à conteneurs" data-i18n-attr-alt="containers.yardAlt">
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         </div>
       </div>
@@ -211,43 +212,43 @@
 
   <section class="trust" data-reveal>
     <div class="wrap">
-      <div class="eyebrow"><span class="rule"></span><span class="label">Confiance &amp; agréments</span></div>
-      <h2>Des engagements, pas des promesses</h2>
-      <p class="lede">Nous opérons sous des agréments officiels qui engagent notre responsabilité.</p>
+      <div class="eyebrow"><span class="rule"></span><span class="label" data-i18n="trust.eyebrow">Confiance &amp; agréments</span></div>
+      <h2 data-i18n="trust.title">Des engagements, pas des promesses</h2>
+      <p class="lede" data-i18n="trust.lede">Nous opérons sous des agréments officiels qui engagent notre responsabilité.</p>
       <div class="proof-grid">
-        <div><div class="n">3 200+</div><div class="l">dossiers dédouanés</div></div>
-        <div><div class="n">99 %</div><div class="l">mainlevées dans les délais</div></div>
-        <div><div class="n">&lt; 1 h</div><div class="l">réponse à votre devis</div></div>
-        <div><div class="n">15 ans</div><div class="l">au service des importateurs</div></div>
+        <div><div class="n">3 200+</div><div class="l" data-i18n="trust.proof1Label">dossiers dédouanés</div></div>
+        <div><div class="n">99 %</div><div class="l" data-i18n="trust.proof2Label">mainlevées dans les délais</div></div>
+        <div><div class="n">&lt; 1 h</div><div class="l" data-i18n="trust.proof3Label">réponse à votre devis</div></div>
+        <div><div class="n">15 ans</div><div class="l" data-i18n="trust.proof4Label">au service des importateurs</div></div>
       </div>
       <div class="trust-cols">
         <div>
-          <h3>Habilitations officielles, vérifiables</h3>
+          <h3 data-i18n="trust.certsTitle">Habilitations officielles, vérifiables</h3>
           <div class="certs-list">
             <div class="cert">
               <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10"/><path d="M8.6 13.4L7 21l5-2.6L17 21l-1.6-7.6"/></svg></div>
-              <div><div class="name">OEA / AEO</div><div class="desc">Opérateur Économique Agréé — douane &amp; sûreté.</div></div>
+              <div><div class="name" data-i18n="trust.cert1.name">OEA / AEO</div><div class="desc" data-i18n="trust.cert1.desc">Opérateur Économique Agréé — douane &amp; sûreté.</div></div>
             </div>
             <div class="cert">
               <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></div>
-              <div><div class="name">Partenaire DHL</div><div class="desc">Point d'envoi agréé, tarifs négociés.</div></div>
+              <div><div class="name" data-i18n="trust.cert2.name">Partenaire DHL</div><div class="desc" data-i18n="trust.cert2.desc">Point d'envoi agréé, tarifs négociés.</div></div>
             </div>
             <div class="cert">
               <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18"/><path d="M3 12h18"/><path d="M12 3c2.6 2.4 4 5.6 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.6-4-9s1.4-6.6 4-9"/></svg></div>
-              <div><div class="name">FIATA / IATA</div><div class="desc">Réseau international de transitaires.</div></div>
+              <div><div class="name" data-i18n="trust.cert3.name">FIATA / IATA</div><div class="desc" data-i18n="trust.cert3.desc">Réseau international de transitaires.</div></div>
             </div>
             <div class="cert">
               <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v13"/><path d="M12 4.5a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6"/><path d="M4.5 14a7.5 7.5 0 0 0 15 0"/><path d="M8 12H4.5"/><path d="M20 12h-3.5"/></svg></div>
-              <div><div class="name">Anvers &amp; Zeebruges</div><div class="desc">Opérations dans les grands ports belges.</div></div>
+              <div><div class="name" data-i18n="trust.cert4.name">Anvers &amp; Zeebruges</div><div class="desc" data-i18n="trust.cert4.desc">Opérations dans les grands ports belges.</div></div>
             </div>
           </div>
         </div>
         <div>
-          <h3>Ce sur quoi vous pouvez compter</h3>
+          <h3 data-i18n="trust.slaTitle">Ce sur quoi vous pouvez compter</h3>
           <div class="sla-list">
-            <div class="row"><div class="badge-num">&lt; 1 h</div><div><div class="t">Réponse à votre devis</div><div class="d">Une offre claire, tout compris, en moins d'une heure ouvrée.</div></div></div>
-            <div class="row"><div class="badge-num">1 dédié</div><div><div class="t">Un conseiller nommé</div><div class="d">Un interlocuteur unique qui connaît vos dossiers — pas un standard.</div></div></div>
-            <div class="row"><div class="badge-num">0 surprise</div><div><div class="t">Devis ferme, tout compris</div><div class="d">Droits, TVA et frais détaillés d'avance — aucun coût caché.</div></div></div>
+            <div class="row"><div class="badge-num" data-i18n="trust.sla1.badge">&lt; 1 h</div><div><div class="t" data-i18n="trust.sla1.title">Réponse à votre devis</div><div class="d" data-i18n="trust.sla1.desc">Une offre claire, tout compris, en moins d'une heure ouvrée.</div></div></div>
+            <div class="row"><div class="badge-num" data-i18n="trust.sla2.badge">1 dédié</div><div><div class="t" data-i18n="trust.sla2.title">Un conseiller nommé</div><div class="d" data-i18n="trust.sla2.desc">Un interlocuteur unique qui connaît vos dossiers — pas un standard.</div></div></div>
+            <div class="row"><div class="badge-num" data-i18n="trust.sla3.badge">0 surprise</div><div><div class="t" data-i18n="trust.sla3.title">Devis ferme, tout compris</div><div class="d" data-i18n="trust.sla3.desc">Droits, TVA et frais détaillés d'avance — aucun coût caché.</div></div></div>
           </div>
         </div>
       </div>
@@ -257,9 +258,9 @@
   <section class="wrap block" data-reveal>
     <div class="lanes-grid">
       <div>
-        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);">Lignes &amp; ports</span></div>
-        <h2>Des grands ports belges vers le monde</h2>
-        <p class="lede">Nous opérons depuis Anvers et Zeebruges sur les principales lignes mondiales, en FCL, LCL, RORO et cargo aérien.</p>
+        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);" data-i18n="lanes.eyebrow">Lignes &amp; ports</span></div>
+        <h2 data-i18n="lanes.title">Des grands ports belges vers le monde</h2>
+        <p class="lede" data-i18n="lanes.lede">Nous opérons depuis Anvers et Zeebruges sur les principales lignes mondiales, en FCL, LCL, RORO et cargo aérien.</p>
         <div class="lanes-list">
           <div class="lane-row"><span>Anvers</span><span class="rule"></span><span class="to">Shanghai</span></div>
           <div class="lane-row"><span>Anvers</span><span class="rule"></span><span class="to">Lagos</span></div>
@@ -271,7 +272,7 @@
       </div>
       <div class="lanes-figure" data-par="0.06">
         <div class="figure blueprint">
-          <img src="assets/ship-network.jpeg" alt="Réseau logistique multimodal">
+          <img src="assets/ship-network.jpeg" alt="Réseau logistique multimodal" data-i18n-attr-alt="lanes.networkAlt">
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         </div>
       </div>
@@ -279,19 +280,19 @@
   </section>
 
   <section id="process" class="wrap block" data-reveal>
-    <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);">Comment ça marche</span></div>
-    <h2 class="title">Quatre étapes, zéro tracas</h2>
-    <p class="subtitle">Vous cliquez, nous nous occupons du reste.</p>
+    <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);" data-i18n="process.eyebrow">Comment ça marche</span></div>
+    <h2 class="title" data-i18n="process.title">Quatre étapes, zéro tracas</h2>
+    <p class="subtitle" data-i18n="process.subtitle">Vous cliquez, nous nous occupons du reste.</p>
     <div class="process-grid">
       <div class="process-steps">
-        <div class="process-step"><div class="n">01</div><div class="t">Vous choisissez</div><p>Export ou Import, puis le mode de transport — tout à la souris.</p></div>
-        <div class="process-step"><div class="n">02</div><div class="t">Vous décrivez</div><p>Ports, marchandise, conteneurs : quelques clics suffisent.</p></div>
-        <div class="process-step"><div class="n">03</div><div class="t">On vous rappelle</div><p>Notre équipe vous envoie une cotation claire sous 24 h.</p></div>
-        <div class="process-step"><div class="n">04</div><div class="t">On expédie</div><p>Booking, douane et transport gérés par un seul interlocuteur.</p></div>
+        <div class="process-step"><div class="n">01</div><div class="t" data-i18n="process.step1.title">Vous choisissez</div><p data-i18n="process.step1.desc">Export ou Import, puis le mode de transport — tout à la souris.</p></div>
+        <div class="process-step"><div class="n">02</div><div class="t" data-i18n="process.step2.title">Vous décrivez</div><p data-i18n="process.step2.desc">Ports, marchandise, conteneurs : quelques clics suffisent.</p></div>
+        <div class="process-step"><div class="n">03</div><div class="t" data-i18n="process.step3.title">On vous rappelle</div><p data-i18n="process.step3.desc">Notre équipe vous envoie une cotation claire sous 24 h.</p></div>
+        <div class="process-step"><div class="n">04</div><div class="t" data-i18n="process.step4.title">On expédie</div><p data-i18n="process.step4.desc">Booking, douane et transport gérés par un seul interlocuteur.</p></div>
       </div>
       <div class="process-figure" data-par="0.05">
         <div class="figure blueprint">
-          <img src="assets/truck.jpeg" alt="Camion en cours de chargement">
+          <img src="assets/truck.jpeg" alt="Camion en cours de chargement" data-i18n-attr-alt="process.truckAlt">
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
         </div>
       </div>
@@ -301,33 +302,33 @@
   <section id="why" class="wrap block" data-reveal>
     <div class="why-grid">
       <div>
-        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);">Pourquoi Louhichi Logistics</span></div>
-        <h2>Simple pour vous, carré pour vos marchandises</h2>
+        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);" data-i18n="why.eyebrow">Pourquoi Louhichi Logistics</span></div>
+        <h2 data-i18n="why.title">Simple pour vous, carré pour vos marchandises</h2>
       </div>
       <div class="why-cards">
         <div class="why-card blueprint" data-tilt>
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg></div>
-          <div class="t">Un seul interlocuteur</div>
-          <p>Du devis à la livraison, la même équipe suit votre dossier.</p>
+          <div class="t" data-i18n="why.card1.title">Un seul interlocuteur</div>
+          <p data-i18n="why.card1.desc">Du devis à la livraison, la même équipe suit votre dossier.</p>
         </div>
         <div class="why-card blueprint" data-tilt>
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8"/><path d="M8 12h5"/></svg></div>
-          <div class="t">Sans jargon</div>
-          <p>On vous explique chaque étape dans un langage clair.</p>
+          <div class="t" data-i18n="why.card2.title">Sans jargon</div>
+          <p data-i18n="why.card2.desc">On vous explique chaque étape dans un langage clair.</p>
         </div>
         <div class="why-card blueprint" data-tilt>
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18"/><path d="M3.5 9.5h17"/><path d="M3.5 14.5h17"/></svg></div>
-          <div class="t">Trilingue</div>
-          <p>Nous travaillons en français, néerlandais et anglais.</p>
+          <div class="t" data-i18n="why.card3.title">Trilingue</div>
+          <p data-i18n="why.card3.desc">Nous travaillons en français, néerlandais et anglais.</p>
         </div>
         <div class="why-card blueprint" data-tilt>
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 6.5 12 6.5 21.5 12 21.5 12S18 17.5 12 17.5 2.5 12 2.5 12"/><path d="M12 9.4a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2"/></svg></div>
-          <div class="t">Transparence totale</div>
-          <p>Des tarifs clairs, sans frais cachés, et un suivi à chaque étape.</p>
+          <div class="t" data-i18n="why.card4.title">Transparence totale</div>
+          <p data-i18n="why.card4.desc">Des tarifs clairs, sans frais cachés, et un suivi à chaque étape.</p>
         </div>
       </div>
     </div>
@@ -335,7 +336,7 @@
 
   <section class="wrap block" data-reveal>
     <div class="section-head">
-      <h2>Ce que disent nos clients</h2>
+      <h2 data-i18n="testimonials.title">Ce que disent nos clients</h2>
     </div>
     <div class="testimonials-grid">
 
@@ -348,8 +349,8 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
         </div>
-        <p class="quote">« On importe depuis la Chine depuis 3 ans, et avant Louhichi Logistics on changeait sans arrêt d'interlocuteur. Maintenant j'ai un seul contact qui connaît mes dossiers par cœur. Le devis en moins d'une heure, c'est du concret, pas une promesse marketing. »</p>
-        <div class="author"><span class="name">Amélie Vandenberghe</span><span class="role">Directrice achats, Norda Import SPRL</span></div>
+        <p class="quote" data-i18n="testimonials.t1.quote">« On importe depuis la Chine depuis 3 ans, et avant Louhichi Logistics on changeait sans arrêt d'interlocuteur. Maintenant j'ai un seul contact qui connaît mes dossiers par cœur. Le devis en moins d'une heure, c'est du concret, pas une promesse marketing. »</p>
+        <div class="author"><span class="name">Amélie Vandenberghe</span><span class="role" data-i18n="testimonials.t1.role">Directrice achats, Norda Import SPRL</span></div>
       </div>
 
       <div class="testimonial-card blueprint" data-tilt>
@@ -361,8 +362,8 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
         </div>
-        <p class="quote">« Premier envoi FCL avec eux et aucune mauvaise surprise sur la facture finale — tout était détaillé dès le devis. La douane s'est faite sans que j'aie à courir après des documents. »</p>
-        <div class="author"><span class="name">Karim Belaïd</span><span class="role">Gérant, Belaïd Textiles</span></div>
+        <p class="quote" data-i18n="testimonials.t2.quote">« Premier envoi FCL avec eux et aucune mauvaise surprise sur la facture finale — tout était détaillé dès le devis. La douane s'est faite sans que j'aie à courir après des documents. »</p>
+        <div class="author"><span class="name">Karim Belaïd</span><span class="role" data-i18n="testimonials.t2.role">Gérant, Belaïd Textiles</span></div>
       </div>
 
       <div class="testimonial-card blueprint" data-tilt>
@@ -374,8 +375,8 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-neutral-300)" stroke-width="1.4"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
         </div>
-        <p class="quote">« Le suivi en ligne est pratique, on sait toujours où en est le conteneur. Un bémol sur les délais de réponse un vendredi après-midi, mais sinon très satisfaite du service. »</p>
-        <div class="author"><span class="name">Sophie Lemmens</span><span class="role">Responsable logistique, Ferro Export SA</span></div>
+        <p class="quote" data-i18n="testimonials.t3.quote">« Le suivi en ligne est pratique, on sait toujours où en est le conteneur. Un bémol sur les délais de réponse un vendredi après-midi, mais sinon très satisfaite du service. »</p>
+        <div class="author"><span class="name">Sophie Lemmens</span><span class="role" data-i18n="testimonials.t3.role">Responsable logistique, Ferro Export SA</span></div>
       </div>
 
       <div class="testimonial-card blueprint" data-tilt>
@@ -387,8 +388,8 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent-700)"><path d="M12 2.6l2.9 6.2 6.7.6-5 4.5 1.5 6.6L12 16.9l-5.9 3.6 1.5-6.6-5-4.5 6.7-.6z"/></svg>
         </div>
-        <p class="quote">« Petite entreprise, premier conteneur envoyé vers Casablanca, j'avais peur de me perdre dans les formalités. L'équipe m'a expliqué chaque étape simplement. Je recommande sans hésiter. »</p>
-        <div class="author"><span class="name">Yassine Ouahbi</span><span class="role">Fondateur, Atlas Trading</span></div>
+        <p class="quote" data-i18n="testimonials.t4.quote">« Petite entreprise, premier conteneur envoyé vers Casablanca, j'avais peur de me perdre dans les formalités. L'équipe m'a expliqué chaque étape simplement. Je recommande sans hésiter. »</p>
+        <div class="author"><span class="name">Yassine Ouahbi</span><span class="role" data-i18n="testimonials.t4.role">Fondateur, Atlas Trading</span></div>
       </div>
 
     </div>
@@ -397,33 +398,33 @@
   <section id="contact" class="wrap block" data-reveal style="padding-bottom: 120px;">
     <div class="contact-grid">
       <div>
-        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);">Parlons-en</span></div>
-        <h2>Une question&nbsp;? Un projet&nbsp;?</h2>
-        <p class="lede">Appelez-nous ou écrivez — réponse rapide et conseil gratuit.</p>
+        <div class="eyebrow" style="margin-bottom: 18px;"><span class="label" style="color: var(--color-accent-700);" data-i18n="contact.eyebrow">Parlons-en</span></div>
+        <h2 data-i18n="contact.title">Une question&nbsp;? Un projet&nbsp;?</h2>
+        <p class="lede" data-i18n="contact.lede">Appelez-nous ou écrivez — réponse rapide et conseil gratuit.</p>
         <div class="contact-list">
           <a class="row" href="mailto:devis@louhichilogistics.be">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
-            <span><span class="k">Email</span><span class="v">devis@louhichilogistics.be</span></span>
+            <span><span class="k" data-i18n="contact.emailLabel">Email</span><span class="v">devis@louhichilogistics.be</span></span>
           </a>
           <a class="row" href="tel:+32472925106">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4h-2A16 16 0 0 1 4 6z"/></svg>
-            <span><span class="k">Téléphone</span><span class="v">+32 472 92 51 06</span></span>
+            <span><span class="k" data-i18n="contact.phoneLabel">Téléphone</span><span class="v">+32 472 92 51 06</span></span>
           </a>
           <div class="row">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><path d="M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></svg>
-            <span><span class="k">Adresse</span><span class="v">[À COMPLÉTER]</span></span>
+            <span><span class="k" data-i18n="contact.addressLabel">Adresse</span><span class="v">[À COMPLÉTER]</span></span>
           </div>
         </div>
       </div>
       <div class="quote-panel-wrap">
         <div class="quote-panel blueprint" data-tilt>
           <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-          <h3>Recevez votre cotation gratuite</h3>
-          <p>Décrivez votre envoi en quelques clics. Aucune saisie compliquée — notre assistant vous guide pas à pas.</p>
-          <button type="button" class="btn-solid" data-open-wizard>Démarrer ma demande</button>
+          <h3 data-i18n="contact.quotePanelTitle">Recevez votre cotation gratuite</h3>
+          <p data-i18n="contact.quotePanelDesc">Décrivez votre envoi en quelques clics. Aucune saisie compliquée — notre assistant vous guide pas à pas.</p>
+          <button type="button" class="btn-solid" data-open-wizard data-i18n="contact.quotePanelCta">Démarrer ma demande</button>
           <div class="quote-stats">
-            <div><div class="v">6 étapes</div><div class="l">tout au clic</div></div>
-            <div><div class="v">&lt; 1 h</div><div class="l">réponse ouvrée</div></div>
+            <div><div class="v" data-i18n="contact.quoteStat1Value">6 étapes</div><div class="l" data-i18n="contact.quoteStat1Label">tout au clic</div></div>
+            <div><div class="v" data-i18n="contact.quoteStat2Value">&lt; 1 h</div><div class="l" data-i18n="contact.quoteStat2Label">réponse ouvrée</div></div>
           </div>
         </div>
       </div>
@@ -444,9 +445,9 @@
           </svg>
           LOUHICHI <span class="gold">LOGISTICS</span>
         </div>
-        <div class="tag">Transitaire · Logistique · Douane</div>
+        <div class="tag" data-i18n="footer.tagline">Transitaire · Logistique · Douane</div>
       </div>
-      <div class="legal">© 2026 Louhichi Logistics · <a href="mailto:devis@louhichilogistics.be">devis@louhichilogistics.be</a> · BCE [À COMPLÉTER] · TVA BE [À COMPLÉTER] · EORI BE[À COMPLÉTER] · Tous droits réservés.</div>
+      <div class="legal">© 2026 Louhichi Logistics · <a href="mailto:devis@louhichilogistics.be">devis@louhichilogistics.be</a> · BCE [À COMPLÉTER] · TVA BE [À COMPLÉTER] · EORI BE[À COMPLÉTER] · <span data-i18n="footer.rights">Tous droits réservés.</span></div>
     </div>
   </footer>
 
@@ -457,8 +458,8 @@
   <div class="chat-panel" id="chatPanel" hidden>
     <div class="head">
       <span class="dot"></span>
-      <span class="title">Assistant Louhichi</span>
-      <span class="demo">Démo</span>
+      <span class="title" data-i18n="chat.toggleOpenLabel">Assistant Louhichi</span>
+      <span class="demo" data-i18n="chat.demo">Démo</span>
       <button type="button" class="close" data-close-chat>×</button>
     </div>
     <div class="body" id="chatBody"></div>
@@ -474,26 +475,31 @@
 <div class="modal-overlay" id="trackerOverlay">
   <div class="tracker-modal" id="trackerPanel">
     <div class="head">
-      <h3>Suivi de votre envoi</h3>
-      <button type="button" class="close" data-close-tracker>Fermer</button>
+      <h3 data-i18n="tracker.title">Suivi de votre envoi</h3>
+      <div class="langs">
+        <button type="button" class="active" data-lang="fr">FR</button>
+        <button type="button" data-lang="nl">NL</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button type="button" class="close" data-close-tracker data-i18n="common.close">Fermer</button>
     </div>
-    <p class="intro">Choisissez un envoi de démonstration ou saisissez votre référence de dossier.</p>
+    <p class="intro" data-i18n="tracker.intro">Choisissez un envoi de démonstration ou saisissez votre référence de dossier.</p>
     <div class="demo-grid" id="demoGrid"></div>
     <div class="ref-row">
       <label>
-        <span class="label-sm">… ou votre référence de dossier</span>
-        <input type="text" class="text-input" id="refInput" placeholder="Ex : LL-2026-1847">
+        <span class="label-sm" data-i18n="tracker.refLabel">… ou votre référence de dossier</span>
+        <input type="text" class="text-input" id="refInput" placeholder="Ex : LL-2026-1847" data-i18n-attr-placeholder="tracker.refPlaceholder">
       </label>
-      <button type="button" class="btn-solid" id="doTrackBtn">Suivre</button>
+      <button type="button" class="btn-solid" id="doTrackBtn" data-i18n="tracker.trackBtn">Suivre</button>
     </div>
-    <div class="notice" id="trackNotFound" hidden>Référence inconnue — voici un exemple de suivi en direct.</div>
+    <div class="notice" id="trackNotFound" hidden data-i18n="tracker.notFound">Référence inconnue — voici un exemple de suivi en direct.</div>
     <div class="track-meta" id="trackMeta"></div>
-    <div class="track-progress-label"><span class="k">Progression</span><span class="pct" id="trackPct"></span></div>
+    <div class="track-progress-label"><span class="k" data-i18n="tracker.progressLabel">Progression</span><span class="pct" id="trackPct"></span></div>
     <div class="track-bar"><div class="fill" id="trackFill"></div></div>
     <div class="track-stages" id="trackStages"></div>
     <div class="track-footer">
-      <span>Tout est sous contrôle. Votre conseiller Louhichi supervise chaque étape de l'acheminement.</span>
-      <a href="tel:+32472925106" class="btn-outline">Parler à mon conseiller</a>
+      <span data-i18n="tracker.footerText">Tout est sous contrôle. Votre conseiller Louhichi supervise chaque étape de l'acheminement.</span>
+      <a href="tel:+32472925106" class="btn-outline" data-i18n="tracker.footerCta">Parler à mon conseiller</a>
     </div>
   </div>
 </div>
@@ -503,10 +509,10 @@
   <div class="tracker-modal" id="portPickerPanel">
     <div class="head">
       <h3 id="portPickerTitle">Choisir un port</h3>
-      <button type="button" class="close" data-close-portpicker>Fermer</button>
+      <button type="button" class="close" data-close-portpicker data-i18n="common.close">Fermer</button>
     </div>
-    <p class="intro">Recherchez, puis sélectionnez dans la liste.</p>
-    <input type="text" class="text-input" id="portPickerSearch" placeholder="Rechercher…" style="margin-bottom: 20px;">
+    <p class="intro" data-i18n="portPicker.intro">Recherchez, puis sélectionnez dans la liste.</p>
+    <input type="text" class="text-input" id="portPickerSearch" placeholder="Rechercher…" style="margin-bottom: 20px;" data-i18n-attr-placeholder="portPicker.searchPlaceholder">
     <div class="chip-list" id="portPickerList"></div>
   </div>
 </div>
@@ -527,17 +533,22 @@
         </svg>
         LOUHICHI <span class="gold">LOGISTICS</span>
       </div>
-      <button type="button" class="back" data-close-wizard>Retour au site</button>
+      <div class="langs">
+        <button type="button" class="active" data-lang="fr">FR</button>
+        <button type="button" data-lang="nl">NL</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button type="button" class="back" data-close-wizard data-i18n="wizard.backToSite">Retour au site</button>
     </div>
 
     <div id="wizSent" class="wiz-sent" hidden>
       <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></div>
-      <h2>Demande envoyée !</h2>
-      <p>Merci. Notre équipe vous recontacte sous 24 h avec votre cotation. Votre référence :</p>
+      <h2 data-i18n="wizard.sent.title">Demande envoyée !</h2>
+      <p data-i18n="wizard.sent.desc">Merci. Notre équipe vous recontacte sous 24 h avec votre cotation. Votre référence :</p>
       <div class="ref" id="wizRef"></div>
       <div class="actions">
-        <button type="button" class="btn-solid" data-close-wizard>Revenir à l'accueil</button>
-        <button type="button" class="btn-outline" id="wizResetBtn">Nouvelle demande</button>
+        <button type="button" class="btn-solid" data-close-wizard data-i18n="wizard.sent.backHome">Revenir à l'accueil</button>
+        <button type="button" class="btn-outline" id="wizResetBtn" data-i18n="wizard.sent.newRequest">Nouvelle demande</button>
       </div>
     </div>
 
@@ -561,7 +572,7 @@
       </div>
 
       <div class="qty-row" id="qtyRow" hidden>
-        <div class="t">Combien de conteneurs ?</div>
+        <div class="t" data-i18n="wizard.qtyQuestion">Combien de conteneurs ?</div>
         <div class="qty-stepper">
           <button type="button" id="qtyDec">−</button>
           <div class="val" id="qtyVal">1</div>
@@ -571,17 +582,17 @@
       </div>
 
       <div class="form-grid" id="formGrid" hidden>
-        <label><span class="label-sm">Nom complet *</span><input type="text" class="text-input" id="fName"></label>
-        <label><span class="label-sm">Société (facultatif)</span><input type="text" class="text-input" id="fCompany"></label>
-        <label><span class="label-sm">Email *</span><input type="email" class="text-input" id="fEmail"></label>
-        <label><span class="label-sm">Téléphone *</span><input type="tel" class="text-input" id="fPhone" placeholder="+32 …"></label>
-        <label class="full"><span class="label-sm">Message (facultatif)</span><textarea rows="3" class="text-input" id="fMsg" placeholder="Une précision sur votre envoi ?"></textarea></label>
+        <label><span class="label-sm" data-i18n="wizard.form.nameLabel">Nom complet *</span><input type="text" class="text-input" id="fName"></label>
+        <label><span class="label-sm" data-i18n="wizard.form.companyLabel">Société (facultatif)</span><input type="text" class="text-input" id="fCompany"></label>
+        <label><span class="label-sm" data-i18n="wizard.form.emailLabel">Email *</span><input type="email" class="text-input" id="fEmail"></label>
+        <label><span class="label-sm" data-i18n="wizard.form.phoneLabel">Téléphone *</span><input type="tel" class="text-input" id="fPhone" placeholder="+32 …" data-i18n-attr-placeholder="wizard.form.phonePlaceholder"></label>
+        <label class="full"><span class="label-sm" data-i18n="wizard.form.msgLabel">Message (facultatif)</span><textarea rows="3" class="text-input" id="fMsg" placeholder="Une précision sur votre envoi ?" data-i18n-attr-placeholder="wizard.form.msgPlaceholder"></textarea></label>
       </div>
 
       <div class="recap-list" id="recapList" hidden></div>
 
       <div class="wiz-actions">
-        <button type="button" class="wiz-back" id="wizBackBtn">Précédent</button>
+        <button type="button" class="wiz-back" id="wizBackBtn" data-i18n="wizard.back">Précédent</button>
         <button type="button" class="wiz-next" id="wizNextBtn">Suivant</button>
       </div>
       <div class="wiz-error" id="wizError" hidden></div>

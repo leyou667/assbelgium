@@ -31,9 +31,9 @@
   const CITIES = ["Bruxelles", "Anvers", "Liège", "Paris", "Rotterdam", "Cologne", "Milan", "Madrid", "Autre"];
 
   const DEMOS = [
-    { ref: "AAS-2026-1847", from: "Shanghai", to: "Anvers", mode: "Maritime FCL", vessel: "MSC Loreto", container: "MSCU 738210-4", stage: 3, eta: "28 juin 2026" },
-    { ref: "AAS-2026-1923", from: "Casablanca", to: "Bruxelles", mode: "RORO", vessel: "Grande Lagos", container: "—", stage: 5, eta: "22 juin 2026" },
-    { ref: "AAS-2026-2014", from: "Lagos", to: "Liège", mode: "Cargo aérien", vessel: "Vol QR-1340", container: "AWB 157-88421", stage: 7, eta: "Livré le 19 juin" }
+    { ref: "LL-2026-1847", from: "Shanghai", to: "Anvers", mode: "Maritime FCL", vessel: "MSC Loreto", container: "MSCU 738210-4", stage: 3, eta: "28 juin 2026" },
+    { ref: "LL-2026-1923", from: "Casablanca", to: "Bruxelles", mode: "RORO", vessel: "Grande Lagos", container: "—", stage: 5, eta: "22 juin 2026" },
+    { ref: "LL-2026-2014", from: "Lagos", to: "Liège", mode: "Cargo aérien", vessel: "Vol QR-1340", container: "AWB 157-88421", stage: 7, eta: "Livré le 19 juin" }
   ];
 
   const STAGES = [
@@ -49,9 +49,9 @@
 
   const FAQ = [
     ["Quels sont vos services ?", "Conteneur maritime (FCL/LCL), RORO, cargo aérien, transport routier, service douane (T1/NCTS, EUR.1, ATR, PLDA), logistique & entreposage, colis & express. Billetterie voyageurs : billets d'avion et de bus longue distance. Point d'envoi DHL agréé."],
-    ["Combien coûte un 40' vers Anvers ?", "Cela dépend du port de départ, de la marchandise et de l'incoterm. Un conseiller AAS confirme le tarif définitif sous 1 h ouvrée, hors droits de douane & TVA."],
+    ["Combien coûte un 40' vers Anvers ?", "Cela dépend du port de départ, de la marchandise et de l'incoterm. Un conseiller Louhichi confirme le tarif définitif sous 1 h ouvrée, hors droits de douane & TVA."],
     ["Quels documents pour un export ?", "Facture commerciale, liste de colisage, code HS, et selon la destination : EUR.1, ATR, certificat d'origine. Nous vous assistons sur les incoterms et l'assurance transport."],
-    ["Vous êtes joignables où ?", "logistics@aspha.co · +32 493 89 61 57 ou +32 470 47 58 12 · Avenue de Clemenceau 67, 1070 Bruxelles. TVA BE 0748.963.625."],
+    ["Vous êtes joignables où ?", "devis@louhichilogistics.be · +32 472 92 51 06 · [À COMPLÉTER]. TVA BE [À COMPLÉTER]."],
     ["Combien de temps pour un devis ?", "Devis gratuit, sans engagement, réponse en moins d'1 h ouvrée. Tous incoterms : EXW, FOB, CIF, CFR, DAP, DDP, FCA."],
     ["Vous gérez la douane ?", "Oui. Dédouanement export/import, déclarations, codes HS, documents et conformité réglementaire. Nous opérons sous agrément OEA / AEO."]
   ];
@@ -83,7 +83,7 @@
     lang: "fr",
     routeStep: 0,
     chatOpen: false,
-    chat: [{ me: false, text: "Bonjour ! Je suis l'assistant AAS. Choisissez une question ci-dessous." }],
+    chat: [{ me: false, text: "Bonjour ! Je suis l'assistant Louhichi. Choisissez une question ci-dessous." }],
     trackOpen: false,
     demoIdx: 0,
     refInput: "",
@@ -132,7 +132,7 @@
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(w.email)) { state.formError = "Email invalide."; renderWizard(); return; }
     if (!w.phone.trim()) { state.formError = "Merci d'indiquer un téléphone."; renderWizard(); return; }
     state.wizSent = true;
-    state.wizRef = "AAS-2026-" + (1500 + Math.floor(Math.random() * 800));
+    state.wizRef = "LL-2026-" + (1500 + Math.floor(Math.random() * 800));
     renderWizard();
   }
 
@@ -163,7 +163,7 @@
   // ---- render: chat widget ----
   function renderChat() {
     document.getElementById("chatPanel").hidden = !state.chatOpen;
-    document.getElementById("chatToggleLabel").textContent = state.chatOpen ? "Fermer l'assistant" : "Assistant AAS";
+    document.getElementById("chatToggleLabel").textContent = state.chatOpen ? "Fermer l'assistant" : "Assistant Louhichi";
     const body = document.getElementById("chatBody");
     body.innerHTML = "";
     state.chat.forEach(m => {

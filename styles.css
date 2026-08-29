@@ -86,7 +86,6 @@ button { font: inherit; }
 @keyframes aasDrift1 { 0% { transform: translate3d(-6%, -4%, 0) scale(1); } 50% { transform: translate3d(8%, 6%, 0) scale(1.15); } 100% { transform: translate3d(-6%, -4%, 0) scale(1); } }
 @keyframes aasDrift2 { 0% { transform: translate3d(6%, 8%, 0) scale(1.1); } 50% { transform: translate3d(-8%, -6%, 0) scale(1); } 100% { transform: translate3d(6%, 8%, 0) scale(1.1); } }
 @keyframes aasGrid { 0% { background-position: 0 0; } 100% { background-position: 72px 72px; } }
-@keyframes aasDot { 0% { left: 0%; } 100% { left: 100%; } }
 @keyframes aasIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
 .bg-fx { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
@@ -102,6 +101,14 @@ button { font: inherit; }
 .brand { display: flex; align-items: baseline; gap: 8px; color: var(--color-text); }
 .brand .b1 { font-family: var(--font-heading); font-weight: 700; font-size: 25px; letter-spacing: .04em; line-height: 1; }
 .brand .b2 { font-family: var(--font-heading); font-weight: 400; font-size: 25px; letter-spacing: .04em; line-height: 1; color: var(--color-accent-700); }
+
+/* — brand mark (logo) — additive rules only, .brand/.b1/.b2 above are untouched — */
+.brand-mark { width: 34px; height: 34px; flex-shrink: 0; align-self: center; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.05; gap: 2px; }
+.brand-text .b1 { font-size: 15px; }
+.brand-text .b2 { font-size: 10px; letter-spacing: .12em; }
+.brand .gold, .brandline .gold { color: #c78a3d; }
+.brandline-mark { width: 22px; height: 22px; vertical-align: -6px; margin-right: 8px; flex-shrink: 0; }
 .navlinks { display: flex; gap: 24px; margin-left: auto; }
 .navlinks a { font-size: 13.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--color-neutral-700); }
 .navlinks a:hover { color: var(--color-accent-700); }
@@ -179,7 +186,7 @@ h2.title { font-weight: 600; font-size: clamp(38px, 4.6vw, 62px); line-height: 1
 /* — live tracking teaser — */
 .progress-line { position: relative; height: 2px; background: var(--color-neutral-300); }
 .progress-line .fill { position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-accent-600), var(--color-accent-300)); }
-.progress-line .dot { position: absolute; top: -5px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--color-accent-800); animation: aasDot 9s linear infinite; box-shadow: 0 0 0 6px rgba(89,128,166,.22); }
+.progress-line .dot { position: absolute; top: -5px; left: 0%; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--color-accent-800); transition: left 1.7s cubic-bezier(.4,0,.2,1); box-shadow: 0 0 0 6px rgba(89,128,166,.22); }
 .route-steps { display: grid; grid-template-columns: repeat(4, 1fr); }
 .route-step { display: flex; flex-direction: column; align-items: flex-start; }
 .route-step .tick { width: 1px; height: 22px; background: var(--color-neutral-400); }
@@ -270,6 +277,18 @@ h2.title { font-weight: 600; font-size: clamp(38px, 4.6vw, 62px); line-height: 1
 .why-card .t { font-family: var(--font-heading); font-size: 24px; line-height: 1.1; }
 .why-card p { font-size: 14px; line-height: 1.55; color: var(--color-neutral-700); margin: 9px 0 0; }
 @media (max-width: 860px) { .why-grid { grid-template-columns: 1fr; } .why-cards { grid-template-columns: 1fr; } }
+
+/* — testimonials — */
+.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--color-divider); perspective: 1400px; }
+.testimonial-card { position: relative; background: var(--color-bg); padding: 36px 32px 40px; display: flex; flex-direction: column; }
+.testimonial-card:hover { background: var(--color-accent-100); box-shadow: var(--shadow-md); z-index: 2; }
+.testimonial-card .stars { display: flex; gap: 3px; margin-bottom: 18px; }
+.testimonial-card .stars svg { width: 16px; height: 16px; }
+.testimonial-card .quote { font-size: 15.5px; line-height: 1.6; color: var(--color-text); margin: 0; }
+.testimonial-card .author { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--color-divider); }
+.testimonial-card .author .name { display: block; font-family: var(--font-heading); font-size: 17px; }
+.testimonial-card .author .role { display: block; font-size: 12.5px; color: var(--color-neutral-600); margin-top: 2px; }
+@media (max-width: 860px) { .testimonials-grid { grid-template-columns: 1fr; } }
 
 /* — contact — */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }

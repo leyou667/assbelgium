@@ -79,7 +79,7 @@
     document.title = t("meta.title");
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute("content", t("meta.description"));
-    document.querySelectorAll(".langs button[data-lang]").forEach((b) => {
+    document.querySelectorAll("[data-lang]").forEach((b) => {
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
     });
   }
@@ -131,7 +131,7 @@
     currentLang = detectInitialLang();
     updateHeadAndLangButtons(currentLang);
     applyToDom(document);
-    document.querySelectorAll(".langs button[data-lang]").forEach((b) => {
+    document.querySelectorAll("[data-lang]").forEach((b) => {
       b.addEventListener("click", () => setLangWithFade(b.getAttribute("data-lang")));
     });
     resolveReady();

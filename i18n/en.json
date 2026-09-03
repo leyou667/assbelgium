@@ -1,282 +1,97 @@
 {
   "meta": {
-    "title": "Louhichi Logistics — Freight Forwarder in Belgium",
-    "description": "Ocean freight booking, customs, transport and documentary advice. Louhichi Logistics manages your Export and Import from end to end."
+    "title": "Louhichi Logistics — Your cargo. Our responsibility.",
+    "description": "International transport mastered from pickup to delivery. Louhichi Logistics: ocean, air, road, customs."
   },
   "nav": {
-    "brandHomeLabel": "Louhichi Logistics — home",
     "services": "Services",
-    "process": "How it works",
+    "method": "Method",
     "why": "Why us",
     "contact": "Contact",
-    "track": "Track",
-    "quote": "Request a quote",
-    "menuLabel": "Open menu"
+    "quote": "Request a quote"
   },
-  "hero": {
-    "eyebrow": "Freight forwarder in Belgium",
-    "title": "Your cargo, <span class=\"accent\">anywhere in the world</span>.",
-    "lede": "Ocean freight booking, customs, transport and documentary advice. Louhichi Logistics manages your Export and Import from end to end — simply.",
-    "exportLabel": "EXPORT",
-    "exportDesc": "I'm sending goods abroad",
-    "importLabel": "IMPORT",
-    "importDesc": "I'm receiving goods from abroad",
-    "captionTitle": "Tracking from A to Z",
-    "captionDesc": "A single point of contact",
-    "stat1Label": "Support",
-    "stat1Value": "from A to Z",
-    "stat2Label": "Ports",
-    "stat2Value": "worldwide",
-    "stat3Label": "Response",
-    "stat3Value": "within 24 h",
-    "shipAlt": "Container ship approaching the port"
-  },
-  "cinematic": {
-    "introLabel": "Scroll to discover the process",
-    "outroLine": "Louhichi Logistics — Your cargo, our network, no borders.",
-    "loadingLabel": "Loading the sequence",
-    "canvasAlt": "Cinematic sequence: from loading the container to its departure by plane",
-    "scenes": {
-      "loading": "Loading the container",
-      "blueprint": "Technical blueprint",
-      "vessel": "Loading onto the vessel",
-      "air": "Departure by air"
-    }
-  },
-  "tracking": {
-    "title": "Real-time tracking",
-    "subtitle": "Your cargo is under control, every step of the way.",
-    "cta": "Track my shipment",
-    "steps": {
-      "pickup": { "label": "Picked up", "note": "Stuffing & collection" },
-      "sea": { "label": "At sea", "note": "Position tracked continuously" },
-      "customs": { "label": "Customs", "note": "Clearance & documents" },
-      "delivered": { "label": "Delivered", "note": "Door to door" }
-    }
+  "cine": {
+    "intro1": "Your cargo deserves more than simple transport.",
+    "intro2": "It deserves to be <span class=\"accent\">mastered from A to Z</span>.",
+    "charge1": "Pickup",
+    "charge2": "Control",
+    "charge3": "Organisation",
+    "charge4": "Tracking",
+    "depart1": "Your shipment is under way.",
+    "depart2": "We take it from here.",
+    "suivi1": "You know where your cargo is.",
+    "suivi2": "At every step.",
+    "arrivee1": "From your point of departure…",
+    "arrivee2": "…to its destination.",
+    "hud1": "Picked up",
+    "hud2": "In transit",
+    "hud3": "Active tracking",
+    "hud4": "Destination confirmed",
+    "heroTitle": "Your cargo. Our responsibility.",
+    "heroSub": "International transport mastered, from pickup to delivery.",
+    "heroCta1": "Request a quote",
+    "heroCta2": "Discover our services",
+    "scroll": "Scroll"
   },
   "services": {
     "eyebrow": "Our services",
-    "title": "Everything you need to ship with peace of mind",
-    "subtitle": "One team, one responsibility: yours, taken off your hands.",
-    "card1": { "title": "Ocean freight booking", "desc": "FCL / LCL container freight booked at the best rate, on the main global routes.", "tag": "FCL · LCL · RORO" },
-    "card2": { "title": "Customs & formalities", "desc": "Export/import clearance, declarations, HS codes, documents and regulatory compliance.", "tag": "T1 / NCTS · EUR.1 · PLDA" },
-    "card3": { "title": "Road transport", "desc": "Pre- and on-carriage, door-to-door delivery throughout Belgium and Europe.", "tag": "Belgium · Europe" },
-    "card4": { "title": "Documentary advice", "desc": "Support with shipping documents, incoterms, certificates and cargo insurance.", "tag": "Incoterms · Insurance" },
-    "card5": { "title": "Traveller ticketing", "desc": "Flights and long-distance coach tickets (FlixBus & others) at negotiated rates, for you and your teams.", "tag": "Flights · Coach" },
-    "card6": { "title": "DHL drop-off point", "desc": "Drop your parcels off at Louhichi Logistics: we create the DHL label and ship at a negotiated rate.", "tag": "Parcels · Express" }
-  },
-  "containers": {
-    "title": "Containers, to scale",
-    "subtitle": "See the volume you need at a glance.",
-    "row1": { "name": "20' Standard", "sub": "6.06 m" },
-    "row2": { "name": "40' Standard", "sub": "12.19 m" },
-    "row3": { "name": "40' High Cube", "sub": "12.19 m · +30 cm" },
-    "row4": { "name": "Refrigerated", "sub": "Reefer / cold chain" },
-    "row5": { "name": "Open Top", "sub": "Top-loaded" },
-    "yardAlt": "Container yard"
-  },
-  "trust": {
-    "eyebrow": "Trust & accreditations",
-    "title": "Commitments, not promises",
-    "lede": "We operate under official accreditations that hold us accountable.",
-    "proof1Label": "shipments cleared through customs",
-    "proof2Label": "releases on time",
-    "proof3Label": "response to your quote",
-    "proof4Label": "serving importers",
-    "certsTitle": "Official, verifiable accreditations",
-    "cert1": { "name": "AEO", "desc": "Authorised Economic Operator — customs & security." },
-    "cert2": { "name": "DHL partner", "desc": "Approved drop-off point, negotiated rates." },
-    "cert3": { "name": "FIATA / IATA", "desc": "International network of freight forwarders." },
-    "cert4": { "name": "Antwerp & Zeebrugge", "desc": "Operating in Belgium's major ports." },
-    "slaTitle": "What you can count on",
-    "sla1": { "badge": "< 1 h", "title": "Response to your quote", "desc": "A clear, all-inclusive offer in under an hour, during business hours." },
-    "sla2": { "badge": "1 dedicated", "title": "A named account manager", "desc": "A single point of contact who knows your files — not a call centre." },
-    "sla3": { "badge": "0 surprises", "title": "Firm, all-inclusive quote", "desc": "Duties, VAT and fees detailed upfront — no hidden costs." }
-  },
-  "lanes": {
-    "eyebrow": "Lanes & ports",
-    "title": "From Belgium's major ports to the world",
-    "lede": "We operate out of Antwerp and Zeebrugge on the main global routes, by FCL, LCL, RORO and air freight.",
-    "networkAlt": "Multimodal logistics network"
-  },
-  "process": {
-    "eyebrow": "How it works",
-    "title": "Four steps, zero hassle",
-    "subtitle": "You click, we handle the rest.",
-    "step1": { "title": "You choose", "desc": "Export or Import, then the mode of transport — all with the click of a mouse." },
-    "step2": { "title": "You describe", "desc": "Ports, goods, containers: a few clicks are all it takes." },
-    "step3": { "title": "We call you back", "desc": "Our team sends you a clear quote within 24 h." },
-    "step4": { "title": "We ship", "desc": "Booking, customs and transport handled by a single point of contact." },
-    "truckAlt": "Truck being loaded"
+    "title": "Every link of your supply chain, under one roof.",
+    "s1": { "title": "Ocean freight booking", "desc": "FCL / LCL container freight booked at the best rate, on the main global routes." },
+    "s2": { "title": "Customs &amp; formalities", "desc": "Export/import clearance, declarations, HS codes, full regulatory compliance." },
+    "s3": { "title": "Road transport", "desc": "Pre- and on-carriage, door-to-door delivery throughout Belgium and Europe." },
+    "s4": { "title": "Documentary advice", "desc": "Shipping documents, incoterms, certificates and cargo insurance, no jargon." },
+    "s5": { "title": "Traveller ticketing", "desc": "Flights and long-distance coach tickets at negotiated rates, for you and your teams." },
+    "s6": { "title": "DHL drop-off point", "desc": "Drop your parcels off at Louhichi: we create the label and ship at a negotiated rate." }
   },
   "why": {
-    "eyebrow": "Why Louhichi Logistics",
-    "title": "Simple for you, watertight for your cargo",
-    "card1": { "title": "A single point of contact", "desc": "From quote to delivery, the same team follows your file." },
-    "card2": { "title": "No jargon", "desc": "We explain every step in plain language." },
-    "card3": { "title": "Trilingual", "desc": "We work in French, Dutch and English." },
-    "card4": { "title": "Total transparency", "desc": "Clear rates, no hidden fees, and tracking at every step." }
+    "eyebrow": "Why Louhichi",
+    "title": "Mastery, not a promise.",
+    "desc": "We operate under official accreditations that hold us accountable, at every step of your shipment.",
+    "r1": { "title": "A single point of contact", "desc": "From quote to delivery, the same team follows your file — never an anonymous call centre." },
+    "r2": { "title": "Total transparency", "desc": "Duties, VAT and fees detailed upfront. A firm quote, no surprises on arrival." },
+    "r3": { "title": "Trilingual", "desc": "We work in French, Dutch and English, from the first contact to the last document." },
+    "r4": { "title": "Active tracking", "desc": "You know where your cargo is, at every step of its journey." }
   },
-  "testimonials": {
-    "title": "What our clients say",
-    "t1": { "quote": "“We've been importing from China for 3 years, and before Louhichi Logistics we kept switching contacts. Now I have a single contact who knows my files inside out. A quote in under an hour — that's concrete, not a marketing promise.”", "role": "Head of Purchasing, Norda Import SPRL" },
-    "t2": { "quote": "“First FCL shipment with them and no unpleasant surprises on the final invoice — everything was itemised right from the quote. Customs went through without me having to chase documents.”", "role": "Managing Director, Belaïd Textiles" },
-    "t3": { "quote": "“The online tracking is handy, you always know where the container is. One downside on response times on a Friday afternoon, but otherwise very satisfied with the service.”", "role": "Logistics Manager, Ferro Export SA" },
-    "t4": { "quote": "“Small business, first container shipped to Casablanca, I was afraid of getting lost in the paperwork. The team explained every step simply. I recommend them without hesitation.”", "role": "Founder, Atlas Trading" }
+  "method": {
+    "eyebrow": "How it works",
+    "title": "Four steps, zero hassle.",
+    "m1": { "title": "You choose", "desc": "Export or import, then the mode of transport." },
+    "m2": { "title": "You describe", "desc": "Ports, goods, containers: a few details are all it takes." },
+    "m3": { "title": "We quote", "desc": "A clear, complete quote within 24 hours." },
+    "m4": { "title": "We ship", "desc": "Booking, customs and transport handled by a single point of contact." }
+  },
+  "stats": {
+    "s1": "Shipments cleared through customs",
+    "s2": "Releases on time",
+    "s3": "Response to your quote",
+    "s4": "Serving importers"
+  },
+  "cta": {
+    "title": "Your next shipment deserves to be mastered from end to end.",
+    "btn1": "Request a quote",
+    "btn2": "Discover our services"
   },
   "contact": {
-    "eyebrow": "Let's talk",
-    "title": "A question&nbsp;? A project&nbsp;?",
-    "lede": "Call or write to us — fast response and free advice.",
+    "eyebrow": "Contact",
+    "title": "Let's talk about your next shipment.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "addressLabel": "Address",
-    "quotePanelTitle": "Get your free quote",
-    "quotePanelDesc": "Describe your shipment in a few clicks. No complicated forms — our assistant guides you step by step.",
-    "quotePanelCta": "Start my request",
-    "quoteStat1Value": "6 steps",
-    "quoteStat1Label": "all by clicking",
-    "quoteStat2Value": "< 1 h",
-    "quoteStat2Label": "response during business hours"
+    "form": {
+      "name": "Full name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "msg": "Your need",
+      "submit": "Send my request",
+      "note": "Response within 24 business hours."
+    },
+    "formSent": "Thank you. Our team will get back to you within 24 business hours."
   },
   "footer": {
     "tagline": "Freight forwarder · Logistics · Customs",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
     "rights": "All rights reserved."
-  },
-  "chat": {
-    "toggleOpenLabel": "Louhichi Assistant",
-    "toggleCloseLabel": "Close the assistant",
-    "demo": "Demo",
-    "greeting": "Hello! I'm the Louhichi assistant. Pick a question below.",
-    "faq": [
-      { "q": "What are your services?", "a": "Ocean container (FCL/LCL), RORO, air freight, road transport, customs service (T1/NCTS, EUR.1, ATR, PLDA), logistics & warehousing, parcels & express. Traveller ticketing: flights and long-distance coach tickets. Approved DHL drop-off point." },
-      { "q": "How much does a 40' to Antwerp cost?", "a": "It depends on the port of departure, the goods and the incoterm. A Louhichi advisor confirms the final rate within 1 business hour, excluding customs duties & VAT." },
-      { "q": "What documents do I need for an export?", "a": "Commercial invoice, packing list, HS code, and depending on the destination: EUR.1, ATR, certificate of origin. We assist you with incoterms and cargo insurance." },
-      { "q": "Where can we reach you?", "a": "devis@louhichilogistics.be · +32 472 92 51 06 · [TO BE COMPLETED]. VAT BE [TO BE COMPLETED]." },
-      { "q": "How long does a quote take?", "a": "Free, no-obligation quote, response in under 1 business hour. All incoterms: EXW, FOB, CIF, CFR, DAP, DDP, FCA." },
-      { "q": "Do you handle customs?", "a": "Yes. Export/import clearance, declarations, HS codes, documents and regulatory compliance. We operate under AEO accreditation." }
-    ]
-  },
-  "tracker": {
-    "title": "Track your shipment",
-    "intro": "Choose a demo shipment or enter your file reference.",
-    "refLabel": "… or your file reference",
-    "refPlaceholder": "E.g.: LL-2026-1847",
-    "trackBtn": "Track",
-    "notFound": "Unknown reference — here is an example of live tracking.",
-    "metaMode": "Mode",
-    "metaVessel": "Vessel / flight",
-    "metaContainer": "Container",
-    "metaEta": "Estimated arrival",
-    "progressLabel": "Progress",
-    "footerText": "Everything is under control. Your Louhichi advisor oversees every step of the shipment.",
-    "footerCta": "Talk to my advisor",
-    "stages": [
-      { "label": "Booking confirmed", "desc": "Reservation confirmed with the carrier." },
-      { "label": "Picked up", "desc": "Goods stuffed and picked up." },
-      { "label": "Loaded on board", "desc": "Loaded on board — departure imminent." },
-      { "label": "In transit", "desc": "In transit — position tracked continuously." },
-      { "label": "Arrived at port", "desc": "Arrived at destination, unloading under way." },
-      { "label": "Cleared", "desc": "Customs formalities finalised." },
-      { "label": "Out for delivery", "desc": "On the way to the delivery address." },
-      { "label": "Delivered", "desc": "Goods delivered. Thank you for your trust." }
-    ],
-    "demos": [
-      { "mode": "Ocean freight FCL", "eta": "28 June 2026" },
-      { "mode": "RORO", "eta": "22 June 2026" },
-      { "mode": "Air freight", "eta": "Delivered on 19 June" }
-    ]
-  },
-  "portPicker": {
-    "titlePort": "Choose a port",
-    "titleCity": "Choose a city",
-    "intro": "Search, then select from the list.",
-    "searchPlaceholder": "Search…",
-    "noResults": "No results.",
-    "otherLabel": "Other"
-  },
-  "common": {
-    "close": "Close"
-  },
-  "wizard": {
-    "backToSite": "Back to the site",
-    "stepLabels": ["Direction", "Transport", "Route", "Goods", "Containers", "Contact details"],
-    "stepDefs": [
-      { "eyebrow": "Step 1", "q": "What would you like to do?", "help": "Choose the direction of your shipment." },
-      { "eyebrow": "Step 2", "q": "Which mode of transport?", "help": "Select the main means of transport." },
-      { "eyebrow": "Step 3", "q": "What is the route?", "helpPort": "Choose the port of departure and arrival.", "helpRoad": "Choose the city of departure and arrival." },
-      { "eyebrow": "Step 4", "q": "What are you shipping?", "help": "Choose the closest category." },
-      { "eyebrow": "Step 5", "q": "What type of container?", "help": "Choose the container suited to your goods." },
-      { "eyebrow": "Last step", "q": "Your contact details", "help": "So we can send you your quote. This is the only part you type in." },
-      { "eyebrow": "Summary", "q": "Let's check together", "help": "Is everything correct? You can edit any line." }
-    ],
-    "route": {
-      "fromPort": "Port of departure",
-      "toPort": "Port of arrival",
-      "fromRoad": "City / country of departure",
-      "toRoad": "City / country of arrival"
-    },
-    "qtyQuestion": "How many containers?",
-    "qtyUnitSingular": "container",
-    "qtyUnitPlural": "containers",
-    "form": {
-      "nameLabel": "Full name *",
-      "companyLabel": "Company (optional)",
-      "emailLabel": "Email *",
-      "phoneLabel": "Phone *",
-      "phonePlaceholder": "+32 …",
-      "msgLabel": "Message (optional)",
-      "msgPlaceholder": "Anything else about your shipment?"
-    },
-    "recap": {
-      "sens": "Direction",
-      "transport": "Transport",
-      "trajet": "Route",
-      "marchandise": "Goods",
-      "conteneur": "Container",
-      "contact": "Contact",
-      "edit": "Edit"
-    },
-    "back": "Back",
-    "next": "Next",
-    "submit": "Send my request",
-    "errors": {
-      "name": "Please enter your name.",
-      "email": "Invalid email.",
-      "phone": "Please enter a phone number."
-    },
-    "sent": {
-      "title": "Request sent!",
-      "desc": "Thank you. Our team will contact you within 24 h with your quote. Your reference:",
-      "backHome": "Back to home",
-      "newRequest": "New request"
-    },
-    "choices": {
-      "dir": {
-        "export": { "label": "EXPORT", "sub": "I'm sending abroad" },
-        "import": { "label": "IMPORT", "sub": "I'm receiving from abroad" }
-      },
-      "mode": {
-        "maritime": { "label": "Ocean", "sub": "Container by ship" },
-        "road": { "label": "Road", "sub": "Truck across Europe" },
-        "air": { "label": "Air freight", "sub": "Cargo by plane" }
-      },
-      "goods": {
-        "vehicles": { "label": "Vehicles", "sub": "Cars, machinery" },
-        "general": { "label": "General cargo", "sub": "Pallets, boxes" },
-        "food": { "label": "Food", "sub": "Foodstuffs, beverages" },
-        "hazard": { "label": "Dangerous goods", "sub": "ADR / IMO" },
-        "personal": { "label": "Personal effects", "sub": "Removals" },
-        "other": { "label": "Other", "sub": "I'll specify" }
-      },
-      "ctype": {
-        "std20": { "label": "20' Standard", "sub": "≈ 28 m³" },
-        "std40": { "label": "40' Standard", "sub": "≈ 58 m³" },
-        "hc40": { "label": "40' High Cube", "sub": "More volume" },
-        "reefer": { "label": "Refrigerated", "sub": "Reefer / cold chain" },
-        "opentop": { "label": "Open Top", "sub": "Top-loaded" },
-        "unsure": { "label": "I don't know", "sub": "We'll advise you" }
-      }
-    }
   }
 }

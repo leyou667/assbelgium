@@ -31,6 +31,18 @@
     "stat3Value": "within 24 h",
     "shipAlt": "Container ship approaching the port"
   },
+  "cinematic": {
+    "introLabel": "Scroll to discover the process",
+    "outroLine": "Louhichi Logistics — Your cargo, our network, no borders.",
+    "loadingLabel": "Loading the sequence",
+    "canvasAlt": "Cinematic sequence: from loading the container to its departure by plane",
+    "scenes": {
+      "loading": "Loading the container",
+      "blueprint": "Technical blueprint",
+      "vessel": "Loading onto the vessel",
+      "air": "Departure by air"
+    }
+  },
   "tracking": {
     "title": "Real-time tracking",
     "subtitle": "Your cargo is under control, every step of the way.",

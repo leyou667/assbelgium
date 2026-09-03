@@ -37,6 +37,18 @@
     "stat3Value": "sous 24 h",
     "shipAlt": "Porte-conteneurs en approche du port"
   },
+  "cinematic": {
+    "introLabel": "Faites défiler pour découvrir le processus",
+    "outroLine": "Louhichi Logistics — Votre marchandise, notre réseau, sans frontières.",
+    "loadingLabel": "Chargement de la séquence",
+    "canvasAlt": "Séquence cinématique : du chargement du conteneur à son départ par avion",
+    "scenes": {
+      "loading": "Chargement du conteneur",
+      "blueprint": "Plan technique",
+      "vessel": "Chargement sur le navire",
+      "air": "Départ par voie aérienne"
+    }
+  },
   "tracking": {
     "title": "Suivi en temps réel",
     "subtitle": "Votre marchandise est sous contrôle, à chaque étape.",

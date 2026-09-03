@@ -488,3 +488,92 @@ a.contact-list .row:hover, .contact-list a.row:hover { background: var(--color-a
   .route-steps { grid-template-columns: 1fr 1fr; }
 }
 
+/* — cinematic scroll sequence — its own visual moment (Marine / Noir / Clair /
+   Or, Montserrat), scoped entirely under .cinematic so nothing here reaches
+   the rest of the site's tokens, fonts or classes. — */
+.cinematic {
+  --cine-marine: #0B1F33;
+  --cine-noir: #111111;
+  --cine-clair: #F5F3EF;
+  --cine-or: #C8A96B;
+  position: relative;
+  z-index: 1;
+  background: var(--cine-marine);
+  color: var(--cine-clair);
+  font-family: 'Montserrat', system-ui, sans-serif;
+}
+.cinematic-intro, .cinematic-outro {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 32px;
+}
+.cinematic-intro p, .cinematic-outro p {
+  font-weight: 300;
+  letter-spacing: .08em;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.5;
+  color: var(--cine-or);
+  text-transform: uppercase;
+  max-width: 40em;
+  margin: 0 auto;
+}
+.cinematic-track { position: relative; height: 500vh; }
+.cinematic-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cine-noir);
+}
+#cinematicCanvas { width: 100%; height: 100%; display: block; }
+.cinematic-progress {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--cine-or);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.cinematic-scene-label {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  z-index: 5;
+  font-size: 12px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--cine-or);
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.cinematic-scene-label.show { opacity: 1; }
+.cinematic-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background: var(--cine-marine);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: opacity .5s ease;
+}
+.cinematic-loading.hide { opacity: 0; pointer-events: none; }
+.cinematic-loading-bar { width: 200px; height: 2px; background: rgba(200, 169, 107, .2); }
+.cinematic-loading-fill { height: 100%; width: 0%; background: var(--cine-or); transition: width .2s ease; }
+.cinematic-loading p { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cine-or); }
+@media (max-width: 640px) {
+  .cinematic-intro, .cinematic-outro { padding: 44px 20px; min-height: 40vh; }
+  .cinematic-scene-label { left: 20px; bottom: 20px; font-size: 11px; }
+}
+

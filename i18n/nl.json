@@ -31,6 +31,18 @@
     "stat3Value": "binnen 24 u",
     "shipAlt": "Containerschip nadert de haven"
   },
+  "cinematic": {
+    "introLabel": "Scroll om het proces te ontdekken",
+    "outroLine": "Louhichi Logistics — Uw goederen, ons netwerk, zonder grenzen.",
+    "loadingLabel": "Sequentie wordt geladen",
+    "canvasAlt": "Cinematische sequentie: van het laden van de container tot het vertrek per vliegtuig",
+    "scenes": {
+      "loading": "Container laden",
+      "blueprint": "Technisch plan",
+      "vessel": "Belading aan boord",
+      "air": "Vertrek door de lucht"
+    }
+  },
   "tracking": {
     "title": "Realtime opvolging",
     "subtitle": "Uw goederen staan onder controle, in elke fase.",

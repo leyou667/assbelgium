@@ -8,6 +8,8 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <script src="i18n.js"></script>
 <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -93,6 +95,30 @@
       <div><div class="k" data-i18n="hero.stat1Label">Accompagnement</div><div class="v" data-i18n="hero.stat1Value">de A à Z</div></div>
       <div><div class="k" data-i18n="hero.stat2Label">Ports</div><div class="v" data-i18n="hero.stat2Value">dans le monde</div></div>
       <div><div class="k" data-i18n="hero.stat3Label">Réponse</div><div class="v" data-i18n="hero.stat3Value">sous 24 h</div></div>
+    </div>
+  </section>
+
+  <!-- Cinematic scroll sequence: container loading -> blueprint -> vessel -> plane.
+       Deliberately its own visual moment (Marine/Noir/Clair/Or, Montserrat) per
+       the "Louhichi International" creative direction -- scoped entirely under
+       .cinematic so it never touches the rest of the site's tokens/fonts. -->
+  <section class="cinematic" id="cinematic">
+    <div class="cinematic-intro">
+      <p data-i18n="cinematic.introLabel">Faites défiler pour découvrir le processus</p>
+    </div>
+    <div class="cinematic-track" id="cinematicTrack">
+      <div class="cinematic-pin">
+        <canvas id="cinematicCanvas" role="img" data-i18n-attr-aria-label="cinematic.canvasAlt" aria-label="Séquence cinématique : du chargement du conteneur à son départ par avion"></canvas>
+        <div class="cinematic-scene-label" id="cinematicSceneLabel"></div>
+        <div class="cinematic-loading" id="cinematicLoading">
+          <div class="cinematic-loading-bar"><div class="cinematic-loading-fill" id="cinematicLoadingFill"></div></div>
+          <p id="cinematicLoadingText"></p>
+        </div>
+      </div>
+      <div class="cinematic-progress" id="cinematicProgress"></div>
+    </div>
+    <div class="cinematic-outro">
+      <p data-i18n="cinematic.outroLine">Louhichi Logistics — Votre marchandise, notre réseau, sans frontières.</p>
     </div>
   </section>
 
@@ -600,6 +626,7 @@
   </div>
 </div>
 
+<script src="cinematic.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
